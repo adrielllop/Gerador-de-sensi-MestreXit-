@@ -1,0 +1,3639 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="mxBrand">MestreXit.ia VIP | A Nova Era do Free Fire 2026</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/X7LLZwcm/file-00000000779471f585f8cb023dfdc1f3.png">
+    <meta property="og:image" content="https://i.postimg.cc/X7LLZwcm/file-00000000779471f585f8cb023dfdc1f3.png">
+    <meta name="twitter:image" content="https://i.postimg.cc/X7LLZwcm/file-00000000779471f585f8cb023dfdc1f3.png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Oxanium:wght@300;400;500;600;700;800&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .watermark {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            opacity: 0.15;
+            z-index: 9999;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        
+        .watermark img {
+            height: 40px;
+            width: auto;
+            filter: grayscale(100%) brightness(200%);
+        }
+        
+        body:hover .watermark {
+            opacity: 0.3;
+        }
+        
+        :root {
+            --primary: #ff8c00;
+            --primary-dark: #ff6b00;
+            --secondary: #00d4ff;
+            --secondary-dark: #0099cc;
+            --accent: #ff00ff;
+            --accent-dark: #cc00cc;
+            --dark: #0a0a1a;
+            --darker: #050510;
+            --dark-light: #1a1a2e;
+            --light: #f0f8ff;
+            --gold: #ffd700;
+            --silver: #c0c0c0;
+            --bronze: #cd7f32;
+            --success: #00ff9d;
+            --danger: #ff3860;
+            --green: #00ff88;
+            --download: #00ff88;
+            --capa: #ff4444;
+            --controle: #44ff44;
+        }
+        
+        body {
+            font-family: 'Exo 2', sans-serif;
+            background-color: var(--darker);
+            color: var(--light);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(255, 140, 0, 0.07) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(0, 212, 255, 0.07) 0%, transparent 20%),
+                linear-gradient(to bottom, rgba(10, 10, 26, 0.9), rgba(5, 5, 16, 0.95)),
+                url('data:image/svg+xml,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M0,0 L100,0 L100,100 Z" fill="%23000a2a" opacity="0.1"/></svg>');
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(255, 0, 255, 0.03) 0%, transparent 10%),
+                radial-gradient(circle at 80% 70%, rgba(0, 212, 255, 0.03) 0%, transparent 10%);
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header VIP */
+        header {
+            padding: 15px 0;
+            position: relative;
+            z-index: 100;
+            background-color: rgba(10, 10, 26, 0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 140, 0, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        
+        .logo-icon {
+            color: var(--primary);
+            font-size: 2.8rem;
+            text-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
+            position: relative;
+        }
+        
+        .logo-img {
+            height: 50px;
+            width: auto;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 140, 0, 0.3);
+            box-shadow: 0 0 15px rgba(255, 140, 0, 0.2);
+        }
+        
+        .logo-icon::after {
+            content: 'VIP';
+            position: absolute;
+            top: -5px;
+            right: -25px;
+            background: linear-gradient(45deg, var(--gold), var(--silver));
+            color: #000;
+            font-size: 0.6rem;
+            font-weight: 900;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .logo-text {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            background: linear-gradient(to right, var(--primary), var(--accent), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: 1px;
+            text-shadow: 0 0 15px rgba(255, 140, 0, 0.3);
+        }
+        
+        .tagline {
+            font-size: 1rem;
+            color: var(--secondary);
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: -5px;
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .user-credit {
+            color: var(--gold);
+            font-size: 1rem;
+            font-weight: 700;
+            font-family: 'Orbitron', sans-serif;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 5px 15px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .user-credit:hover {
+            background: rgba(255, 215, 0, 0.1);
+            transform: scale(1.05);
+        }
+
+        /* Modal Status Key */
+        .modal-status {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(8px);
+            z-index: 10000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-status.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-content {
+            background: linear-gradient(145deg, #1a1a2e, #0f0f1a);
+            border: 1px solid var(--primary);
+            border-radius: 20px;
+            padding: 30px;
+            width: 90%;
+            max-width: 450px;
+            position: relative;
+            box-shadow: 0 0 30px rgba(255, 140, 0, 0.2);
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        .modal-status.active .modal-content {
+            transform: scale(1);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            color: var(--light);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .modal-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .modal-header h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .status-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            border-left: 3px solid var(--secondary);
+        }
+
+        .info-label {
+            color: #8998b8;
+            font-weight: 600;
+        }
+
+        .info-value {
+            color: var(--light);
+            font-weight: 700;
+            font-family: 'Oxanium', sans-serif;
+        }
+
+        .info-value.highlight {
+            color: var(--success);
+        }
+        
+        /* Navigation */
+        nav {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .nav-btn {
+            background: rgba(26, 26, 46, 0.8);
+            color: var(--light);
+            border: 1px solid rgba(255, 140, 0, 0.3);
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            font-family: 'Exo 2', sans-serif;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        
+        .nav-btn:hover, .nav-btn.active {
+            background: linear-gradient(45deg, var(--primary-dark), var(--primary));
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3);
+            border-color: transparent;
+        }
+        
+        .nav-btn i {
+            font-size: 1.2rem;
+        }
+        
+        /* Page Content */
+        .page {
+            display: none;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            min-height: 70vh;
+            padding: 40px 0;
+        }
+        
+        .page.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Home Page */
+        .hero {
+            text-align: center;
+            padding: 40px 0 60px;
+        }
+        
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 4rem;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, var(--primary), var(--accent), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1.1;
+            text-shadow: 0 0 20px rgba(255, 140, 0, 0.2);
+        }
+        
+        .hero p {
+            color: var(--light);
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 50px;
+            font-weight: 300;
+        }
+        
+        .year-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            padding: 8px 20px;
+            border-radius: 30px;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+            box-shadow: 0 5px 15px rgba(255, 140, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .feature-card {
+            background: linear-gradient(145deg, rgba(26, 26, 46, 0.8), rgba(10, 10, 26, 0.9));
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 140, 0, 0.2);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, var(--primary), var(--accent), var(--secondary));
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 140, 0, 0.1);
+            border-color: rgba(255, 140, 0, 0.4);
+        }
+        
+        .card-icon {
+            font-size: 3rem;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 20px;
+        }
+        
+        .card-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--light);
+        }
+        
+        .card-description {
+            color: rgba(240, 248, 255, 0.8);
+            margin-bottom: 25px;
+            flex-grow: 1;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        
+        .card-btn {
+            display: inline-block;
+            background: linear-gradient(to right, var(--primary), var(--primary-dark));
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+            font-family: 'Exo 2', sans-serif;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+            width: 100%;
+        }
+        
+        .card-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(255, 107, 0, 0.4);
+            background: linear-gradient(to right, var(--primary-dark), var(--primary));
+        }
+        
+        .card-btn.secondary {
+            background: linear-gradient(to right, var(--secondary), var(--secondary-dark));
+        }
+        
+        .card-btn.secondary:hover {
+            background: linear-gradient(to right, var(--secondary-dark), var(--secondary));
+            box-shadow: 0 8px 20px rgba(0, 212, 255, 0.4);
+        }
+        
+        .card-btn.green {
+            background: linear-gradient(to right, var(--green), #00cc66);
+        }
+        
+        .card-btn.green:hover {
+            background: linear-gradient(to right, #00cc66, var(--green));
+            box-shadow: 0 8px 20px rgba(0, 255, 136, 0.4);
+        }
+        
+        .card-btn.download {
+            background: linear-gradient(45deg, #00ff88, #00cc66, #00994d);
+            color: #000;
+            font-weight: 900;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-btn.download::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transform: rotate(45deg);
+            animation: shine 3s infinite linear;
+        }
+        
+        @keyframes shine {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+        
+        .card-btn.download:hover {
+            background: linear-gradient(45deg, #00ff99, #00dd77, #00bb55);
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 255, 136, 0.5);
+        }
+        
+        /* Settings Display */
+        .settings-container {
+            background: linear-gradient(145deg, rgba(26, 26, 46, 0.9), rgba(10, 10, 26, 0.95));
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 30px;
+            margin-bottom: 60px;
+            border: 1px solid rgba(255, 140, 0, 0.3);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .settings-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255, 140, 0, 0.03), transparent);
+            z-index: 0;
+        }
+        
+        .settings-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .settings-title i {
+            font-size: 2.2rem;
+        }
+        
+        .settings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .setting-item {
+            background: rgba(5, 5, 16, 0.7);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 140, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .setting-item:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 140, 0, 0.3);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .setting-label {
+            color: var(--secondary);
+            font-size: 1rem;
+            margin-bottom: 10px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .setting-value {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--light);
+            font-family: 'Orbitron', sans-serif;
+            text-shadow: 0 0 10px rgba(255, 140, 0, 0.3);
+        }
+        
+        .setting-unit {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-left: 5px;
+            font-weight: 700;
+        }
+        
+        .settings-actions {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .copy-btn {
+            background: linear-gradient(to right, var(--secondary), var(--secondary-dark));
+        }
+        
+        .reset-btn {
+            background: linear-gradient(to right, #555, #333);
+        }
+        
+        /* Filter Buttons */
+        .filter-container {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .filter-btn {
+            background: rgba(26, 26, 46, 0.8);
+            color: var(--light);
+            border: 1px solid rgba(255, 140, 0, 0.3);
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+        
+        .filter-btn:hover, .filter-btn.active {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3);
+        }
+        
+        .filter-btn.capa {
+            background: linear-gradient(45deg, var(--capa), #ff0000);
+        }
+        
+        .filter-btn.controle {
+            background: linear-gradient(45deg, var(--controle), #00aa00);
+        }
+        
+        .filter-btn.todos {
+            background: linear-gradient(45deg, var(--primary), var(--primary-dark));
+        }
+        
+        /* Selection Grids */
+        .selection-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .selection-card {
+            background: rgba(5, 5, 16, 0.7);
+            padding: 25px 15px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 140, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .selection-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(255, 140, 0, 0.4);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            background: rgba(26, 26, 46, 0.8);
+        }
+        
+        .selection-card.active {
+            background: rgba(255, 140, 0, 0.1);
+            border-color: var(--primary);
+            box-shadow: 0 0 20px rgba(255, 140, 0, 0.2);
+        }
+        
+        .selection-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .selection-name {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            color: var(--light);
+            margin-bottom: 10px;
+        }
+        
+        .selection-desc {
+            color: rgba(240, 248, 255, 0.7);
+            font-size: 0.9rem;
+        }
+        
+        .player-tag {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 0.7rem;
+            padding: 3px 8px;
+            border-radius: 10px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .tag-capa {
+            background: var(--capa);
+        }
+        
+        .tag-controle {
+            background: var(--controle);
+            color: #000;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 140, 0, 0.1);
+            color: rgba(240, 248, 255, 0.7);
+            font-size: 1rem;
+            background-color: rgba(5, 5, 16, 0.8);
+            margin-top: 60px;
+        }
+        
+        .footer-logo {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .copyright {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: rgba(240, 248, 255, 0.5);
+        }
+        
+        .ff2026 {
+            color: var(--accent);
+            font-weight: 700;
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        /* Notification */
+        .notification {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            background: linear-gradient(to right, var(--success), #00cc88);
+            color: #000;
+            padding: 18px 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            display: none;
+            z-index: 1000;
+            animation: slideIn 0.4s ease;
+            font-weight: 700;
+            border: 1px solid rgba(0, 255, 157, 0.3);
+            max-width: 350px;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        .notification.error {
+            background: linear-gradient(to right, var(--danger), #ff1a4d);
+            color: white;
+        }
+        
+        /* Back to Home Button */
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(26, 26, 46, 0.8);
+            color: var(--light);
+            border: 1px solid rgba(255, 140, 0, 0.3);
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            font-family: 'Exo 2', sans-serif;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            margin-bottom: 30px;
+        }
+        
+        .back-home:hover {
+            background: linear-gradient(45deg, var(--primary-dark), var(--primary));
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3);
+        }
+        
+
+        .remember-key { display:flex; align-items:center; justify-content:flex-start; gap:9px; margin-top:13px; color:rgba(255,255,255,.65); font-size:.88rem; cursor:pointer; }
+        .remember-key input { width:17px; height:17px; accent-color:var(--primary); cursor:pointer; }
+        .optimization-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px; position:relative; z-index:1; }
+        .optimization-option { display:flex; align-items:center; gap:16px; padding:24px; border-radius:15px; background:rgba(5,5,16,.72); border:1px solid rgba(255,140,0,.16); cursor:pointer; transition:.25s; }
+        .optimization-option:hover, .optimization-option:has(input:checked) { border-color:var(--primary); background:rgba(255,140,0,.08); transform:translateY(-3px); box-shadow:0 10px 25px rgba(0,0,0,.3); }
+        .optimization-option input { width:20px; height:20px; accent-color:var(--primary); flex:none; }
+        .optimization-icon { width:52px; height:52px; border-radius:14px; display:grid; place-items:center; background:rgba(255,140,0,.12); color:var(--primary); font-size:1.5rem; flex:none; }
+        .optimization-option strong { display:block; font:700 1.15rem 'Orbitron',sans-serif; margin-bottom:5px; }
+        .optimization-option small { display:block; color:rgba(240,248,255,.65); line-height:1.45; }
+        .optimization-action { position:relative; z-index:1; margin-top:35px; text-align:center; }
+        .optimization-progress { display:none; height:12px; margin-top:20px; border-radius:20px; background:rgba(255,255,255,.08); overflow:hidden; border:1px solid rgba(255,140,0,.18); }
+        .optimization-progress.active { display:block; }
+        .optimization-progress-bar { width:0; height:100%; border-radius:20px; background:linear-gradient(90deg,var(--primary),var(--accent),var(--secondary)); transition:width .12s linear; }
+        .optimization-status { min-height:28px; margin-top:15px; font-weight:800; color:var(--success); font-family:'Orbitron',sans-serif; }
+
+        /* Responsive */
+        @media (max-width: 1100px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            nav {
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .logo-text {
+                font-size: 2rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .settings-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .selection-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .settings-actions {
+                flex-direction: column;
+            }
+            
+            .settings-container {
+                padding: 25px;
+            }
+            
+            .nav-btn {
+                padding: 10px 15px;
+                font-size: 0.85rem;
+            }
+            
+            .filter-container {
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .settings-grid, .selection-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-btn {
+                padding: 8px 12px;
+                font-size: 0.8rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .settings-title {
+                font-size: 2rem;
+            }
+        }
+
+
+        /* ===== NAVEGAÇÃO MAIS ORGANIZADA ===== */
+        .main-nav { display:flex !important; align-items:center; justify-content:flex-end; gap:8px !important; flex-wrap:wrap; max-width:900px; }
+        .main-nav .nav-btn { padding:9px 12px; font-size:.78rem; border-radius:10px; gap:6px; }
+        .main-nav .nav-btn i { font-size:.95rem; }
+        .main-nav .user-credit { padding:5px 10px; font-size:.8rem; white-space:nowrap; }
+        @media (max-width:1100px) { .main-nav { justify-content:center; max-width:none; } .header-content { gap:12px; } }
+        @media (max-width:768px) { .main-nav { width:100%; display:grid !important; grid-template-columns:repeat(4,1fr); gap:6px !important; } .main-nav .user-credit { grid-column:1/-1; justify-content:center; text-align:center; } .main-nav .nav-btn { min-height:42px; padding:7px 4px; flex-direction:column; justify-content:center; font-size:.68rem; line-height:1.1; text-align:center; } .main-nav .nav-btn i { font-size:1rem; } }
+        @media (max-width:480px) { .main-nav { grid-template-columns:repeat(2,1fr); } .main-nav .nav-btn { flex-direction:row; font-size:.76rem; min-height:40px; } }
+
+        /* ===== KEY ACCESS SCREEN ===== */
+        .key-screen {
+            min-height: calc(100vh - 90px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 35px 15px;
+            position: relative;
+        }
+        .key-glow {
+            position: absolute;
+            width: 360px;
+            height: 360px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255,140,0,.18), transparent 68%);
+            filter: blur(10px);
+            animation: keyPulse 4s ease-in-out infinite;
+        }
+        @keyframes keyPulse {
+            0%,100% { transform: scale(.9); opacity:.65; }
+            50% { transform: scale(1.15); opacity:1; }
+        }
+        .key-card {
+            width: min(100%, 470px);
+            position: relative;
+            z-index: 2;
+            padding: 38px 32px 28px;
+            text-align: center;
+            border-radius: 28px;
+            background: linear-gradient(145deg, rgba(25,25,48,.96), rgba(7,7,20,.98));
+            border: 1px solid rgba(255,140,0,.35);
+            box-shadow: 0 25px 70px rgba(0,0,0,.65), 0 0 45px rgba(255,140,0,.10);
+            backdrop-filter: blur(18px);
+            overflow: hidden;
+        }
+        .key-card::before {
+            content:'';
+            position:absolute;
+            inset:0 0 auto 0;
+            height:4px;
+            background: linear-gradient(90deg,var(--primary),var(--accent),var(--secondary));
+        }
+        .key-logo-wrap {
+            width:96px;
+            height:96px;
+            margin:0 auto 18px;
+            padding:7px;
+            border-radius:25px;
+            background: rgba(255,255,255,.04);
+            border:1px solid rgba(255,140,0,.35);
+            box-shadow:0 0 35px rgba(255,140,0,.22);
+        }
+        .key-logo {
+            width:100%;
+            height:100%;
+            object-fit:contain;
+            border-radius:18px;
+        }
+        .key-badge {
+            display:inline-flex;
+            gap:7px;
+            align-items:center;
+            padding:7px 13px;
+            border-radius:30px;
+            font:700 .72rem 'Orbitron',sans-serif;
+            color:#fff;
+            background:linear-gradient(90deg,rgba(255,140,0,.22),rgba(255,0,255,.15));
+            border:1px solid rgba(255,140,0,.28);
+            letter-spacing:1px;
+        }
+        .key-card h1 {
+            margin:18px 0 8px;
+            font:900 2rem 'Orbitron',sans-serif;
+            background:linear-gradient(90deg,#fff,var(--primary),var(--secondary));
+            -webkit-background-clip:text;
+            background-clip:text;
+            color:transparent;
+        }
+        .key-card > p {
+            color:rgba(240,248,255,.7);
+            margin-bottom:25px;
+        }
+        .key-input-wrap {
+            display:flex;
+            align-items:center;
+            gap:12px;
+            padding:0 17px;
+            height:58px;
+            border-radius:15px;
+            background:rgba(0,0,0,.35);
+            border:1px solid rgba(255,140,0,.25);
+            transition:.3s;
+        }
+        .key-input-wrap:focus-within {
+            border-color:var(--primary);
+            box-shadow:0 0 0 3px rgba(255,140,0,.08),0 0 25px rgba(255,140,0,.12);
+        }
+        .key-input-wrap i { color:var(--primary); font-size:1.1rem; }
+        .key-input-wrap input {
+            width:100%;
+            height:100%;
+            border:0;
+            outline:0;
+            color:#fff;
+            background:transparent;
+            font:600 1rem 'Exo 2',sans-serif;
+        }
+        .key-input-wrap input::placeholder { color:rgba(255,255,255,.38); }
+        .key-enter-btn {
+            width:100%;
+            height:58px;
+            margin-top:15px;
+            border:0;
+            border-radius:15px;
+            cursor:pointer;
+            color:#fff;
+            font:800 1rem 'Orbitron',sans-serif;
+            background:linear-gradient(90deg,var(--primary-dark),var(--primary),#ffb000);
+            box-shadow:0 10px 25px rgba(255,107,0,.25);
+            transition:.25s;
+        }
+        .key-enter-btn:hover {
+            transform:translateY(-2px);
+            box-shadow:0 14px 30px rgba(255,107,0,.4);
+        }
+        .key-divider {
+            display:flex;
+            align-items:center;
+            gap:12px;
+            margin:22px 0 17px;
+            color:rgba(255,255,255,.4);
+        }
+        .key-divider::before,.key-divider::after {
+            content:'';
+            height:1px;
+            flex:1;
+            background:rgba(255,255,255,.1);
+        }
+        .key-actions { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+        .key-action {
+            min-height:58px;
+            border-radius:15px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            gap:9px;
+            color:#fff;
+            text-decoration:none;
+            font:700 .92rem 'Exo 2',sans-serif;
+            border:1px solid rgba(255,255,255,.1);
+            transition:.25s;
+        }
+        .key-action:hover { transform:translateY(-2px); }
+        .key-action.support { background:linear-gradient(135deg,#5865f2,#4752c4); }
+        .key-action.buy { background:linear-gradient(135deg,#00d4ff,#0077ff); }
+        .key-action i { font-size:1.15rem; }
+        .key-status {
+            min-height:22px;
+            margin-top:14px;
+            color:var(--danger);
+            font-weight:700;
+            font-size:.88rem;
+        }
+        .key-brand {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:8px;
+            margin-top:13px;
+            color:rgba(255,255,255,.45);
+            font:600 .75rem 'Orbitron',sans-serif;
+        }
+        .key-brand img { width:22px; height:22px; object-fit:contain; border-radius:5px; }
+
+        @media (max-width:480px) {
+            .key-card { padding:32px 20px 23px; border-radius:22px; }
+            .key-card h1 { font-size:1.65rem; }
+            .key-actions { grid-template-columns:1fr; }
+        }
+
+
+        /* ===== V2: Personalização, histórico, favoritos e mobile ===== */
+        .generator-form { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px; margin:0 0 28px; position:relative; z-index:1; }
+        .form-field { background:rgba(5,5,16,.72); border:1px solid rgba(255,140,0,.18); border-radius:14px; padding:15px; }
+        .form-field label { display:block; color:var(--secondary); font-weight:700; margin-bottom:8px; font-size:.88rem; text-transform:uppercase; letter-spacing:.5px; }
+        .form-field select,.form-field input { width:100%; padding:12px 13px; border-radius:10px; border:1px solid rgba(255,140,0,.22); background:#101022; color:#fff; outline:none; font-family:'Exo 2',sans-serif; }
+        .form-field input[type=range] { padding:0; accent-color:var(--primary); }
+        .form-help { color:rgba(240,248,255,.58); font-size:.78rem; margin-top:7px; }
+        .result-meta { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0 20px; }
+        .result-chip { padding:7px 10px; border-radius:999px; background:rgba(255,140,0,.09); border:1px solid rgba(255,140,0,.18); color:#fff; font-size:.82rem; }
+        .settings-actions { display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+        .icon-action { min-width:48px !important; width:48px; padding:12px !important; }
+        .favorite-active { border-color:#ffd700 !important; color:#ffd700 !important; }
+        .history-panel { margin-top:30px; position:relative; z-index:1; }
+        .history-title { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:15px; color:#fff; }
+        .history-list { display:grid; gap:10px; }
+        .history-item { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:13px 15px; border-radius:12px; background:rgba(5,5,16,.7); border:1px solid rgba(255,140,0,.12); }
+        .history-item small { color:rgba(240,248,255,.58); display:block; margin-top:4px; }
+        .history-empty { color:rgba(240,248,255,.55); padding:18px; text-align:center; border:1px dashed rgba(255,140,0,.18); border-radius:12px; }
+        .optimization-option small { display:block; margin-top:5px; color:rgba(240,248,255,.55); }
+        .mobile-note { color:rgba(240,248,255,.58); font-size:.82rem; margin-top:10px; }
+
+        /* ===== INFO TAB ===== */
+        .info-avatar {
+            width:118px;
+            height:118px;
+            margin:0 auto 24px;
+            border-radius:50%;
+            display:grid;
+            place-items:center;
+            position:relative;
+            background:linear-gradient(145deg,#4a4a55,#171722);
+            border:2px solid rgba(192,192,192,.55);
+            box-shadow:0 0 0 6px rgba(192,192,192,.05),0 0 35px rgba(0,212,255,.12);
+        }
+        .info-avatar::before {
+            content:'';
+            position:absolute;
+            inset:9px;
+            border-radius:50%;
+            background:linear-gradient(145deg,rgba(255,140,0,.18),rgba(0,212,255,.10),rgba(255,0,255,.08));
+            border:1px solid rgba(255,255,255,.10);
+        }
+        .info-avatar i {
+            position:relative;
+            z-index:1;
+            font-size:4.6rem;
+            background:linear-gradient(180deg,#eeeeee,#9b9ba5 48%,var(--primary) 49%,var(--secondary) 82%,var(--accent));
+            -webkit-background-clip:text;
+            background-clip:text;
+            color:transparent;
+            filter:drop-shadow(0 0 8px rgba(255,255,255,.12));
+        }
+        .info-card {
+            text-align:center;
+            max-width:760px;
+            margin:0 auto;
+        }
+        .info-card p {
+            color:rgba(240,248,255,.75);
+            font-size:1.05rem;
+            line-height:1.75;
+            position:relative;
+            z-index:1;
+        }
+        .info-grid {
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+            gap:16px;
+            margin-top:28px;
+            position:relative;
+            z-index:1;
+        }
+        .info-item-card {
+            padding:20px;
+            border-radius:14px;
+            background:rgba(5,5,16,.72);
+            border:1px solid rgba(255,140,0,.15);
+        }
+        .info-item-card i {
+            font-size:1.7rem;
+            margin-bottom:10px;
+            background:linear-gradient(90deg,var(--primary),var(--secondary));
+            -webkit-background-clip:text;
+            background-clip:text;
+            color:transparent;
+        }
+        .info-item-card strong {
+            display:block;
+            font-family:'Orbitron',sans-serif;
+            margin-bottom:5px;
+        }
+        .info-item-card small { color:rgba(240,248,255,.58); }
+
+        @media (max-width:900px) {
+            .header-content { flex-direction:column; align-items:stretch; gap:12px; }
+            header nav { overflow-x:auto; flex-wrap:nowrap !important; padding-bottom:5px; scrollbar-width:none; }
+            header nav::-webkit-scrollbar { display:none; }
+            .nav-btn { flex:0 0 auto; }
+        }
+        @media (max-width:480px) {
+            .generator-form { grid-template-columns:1fr; }
+            .settings-actions .card-btn { width:100%; }
+            .history-item { align-items:flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="mainHeader" style="display:none;">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <a href="#" class="logo" id="homeLink">
+                        <img src="https://i.postimg.cc/X7LLZwcm/file-00000000779471f585f8cb023dfdc1f3.png" alt="Logo" class="logo-img">
+                        <div>
+                            <div class="logo-text">MestreXit.ia</div>
+                            <div class="tagline">A NOVA ERA DO FREE FIRE</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <nav class="main-nav">
+                    <div class="user-credit" id="userCreditBtn">
+                        <img src="https://i.postimg.cc/X7LLZwcm/file-00000000779471f585f8cb023dfdc1f3.png" alt="Logo" style="height: 15px; width: auto; vertical-align: middle; margin-right: 5px; border-radius: 2px;">
+                        MestreXit
+                    </div>
+                    <a href="#" class="nav-btn active" id="homeBtn">
+                        <i class="fas fa-home"></i> Início
+                    </a>
+                    <a href="#" class="nav-btn" id="proBtn">
+                        <i class="fas fa-crown"></i> Sensi dos Famosos
+                    </a>
+                    <a href="#" class="nav-btn" id="twoThreeBtn">
+                        <i class="fas fa-hand-peace"></i> Sensi 2-3 Dedos
+                    </a>
+                    <a href="#" class="nav-btn" id="randomBtn">
+                        <i class="fas fa-random"></i> Gerar Sensi
+                    </a>
+                    <a href="#" class="nav-btn" id="weaponBtn">
+                        <i class="fas fa-gun"></i> Sensi por Arma
+                    </a>
+                    <a href="#" class="nav-btn" id="dpiBtn">
+                        <i class="fas fa-mobile-alt"></i> DPI Android
+                    </a>
+                    <a href="#" class="nav-btn" id="optimizationNavBtn"><i class="fas fa-bolt"></i> Otimização</a>
+                    <a href="#" class="nav-btn" id="infoBtn">
+                        <i class="fas fa-user"></i> Info
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Pages -->
+    <main class="container">
+
+        <!-- Key Page -->
+        <div class="page active" id="keyPage">
+            <div class="key-screen">
+                <div class="key-glow"></div>
+                <div class="key-card">
+                    <div class="key-logo-wrap">
+                        <img src="https://i.postimg.cc/X7LLZwcm/file-00000000779471f585f8cb023dfdc1f3.png" alt="MestreXit" class="key-logo">
+                    </div>
+                    <div class="key-badge"><i class="fas fa-shield-halved"></i> ACESSO VIP</div>
+                    <h1>Digite sua Key</h1>
+                    <p>Insira sua chave de acesso para entrar no gerador MestreXit.</p>
+
+                    <div class="key-input-wrap">
+                        <i class="fas fa-key"></i>
+                        <input id="accessKey" type="text" placeholder="Digite sua Key..." autocomplete="off">
+                    </div>
+
+                    <button class="key-enter-btn" id="enterKeyBtn">
+                        <i class="fas fa-unlock"></i> Acessar Gerador
+                    </button>
+
+                    <label class="remember-key">
+                        <input id="rememberKey" type="checkbox">
+                        <span>Lembrar da Key neste navegador</span>
+                    </label>
+
+                    <div class="key-divider"><span>ou</span></div>
+
+                    <div class="key-actions">
+                        <a class="key-action support" href="https://discord.gg/TzGcDy5Ag" target="_blank" rel="noopener">
+                            <i class="fab fa-discord"></i>
+                            <span>Suporte</span>
+                        </a>
+                        <a class="key-action buy" href="https://mestrexit-stor.mginex.site/" target="_blank" rel="noopener">
+                            <i class="fas fa-cart-shopping"></i>
+                            <span>Adquirir Key</span>
+                        </a>
+                    </div>
+
+                    <div class="key-status" id="keyStatus"></div>
+                    <div class="key-brand">
+                        <img src="https://i.postimg.cc/X7LLZwcm/file-00000000779471f585f8cb023dfdc1f3.png" alt="Logo">
+                        <span>MestreXit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Home Page -->
+        <div class="page" id="homePage">
+            <section class="hero">
+                <img src="https://i.postimg.cc/X7LLZwcm/file-00000000779471f585f8cb023dfdc1f3.png" alt="Banner" style="max-width: 100%; height: auto; border-radius: 15px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(255,140,0,0.2);">
+                <div class="year-badge">FREE FIRE 2026 EDITION</div>
+                <h1>Gerador Inteligente de Sensibilidade</h1>
+                <p>Domine o Free Fire 2026 com configurações de sensibilidade de até <span class="ff2026">200%</span> otimizadas por inteligência artificial. Sistema VIP atualizado diariamente com as melhores configurações profissionais.</p>
+            </section>
+            
+            <section class="features-grid">
+                <!-- Sensi dos Famosos -->
+                <div class="feature-card">
+                    <i class="fas fa-crown card-icon"></i>
+                    <h3 class="card-title">Sensi dos Famosos</h3>
+                    <p class="card-description">Configurações dos maiores jogadores profissionais de Free Fire 2026. Atualizadas semanalmente com as setups mais eficientes do cenário competitivo.</p>
+                    <button class="card-btn" id="homeProBtn">Ver Configurações VIP</button>
+                </div>
+                
+                <!-- Sensi 2-3 Dedos -->
+                <div class="feature-card">
+                    <i class="fas fa-hand-peace card-icon"></i>
+                    <h3 class="card-title">Sensi 2-3 Dedos</h3>
+                    <p class="card-description">Configurações otimizadas para quem joga com 2 ou 3 dedos. Sensibilidades testadas e eficientes para melhor controle e precisão no Free Fire 2026.</p>
+                    <button class="card-btn green" id="homeTwoThreeBtn">Ver Configurações</button>
+                </div>
+                
+                <!-- Gerar Sensi Aleatória -->
+                <div class="feature-card">
+                    <i class="fas fa-random card-icon"></i>
+                    <h3 class="card-title">Gerar Sensi Aleatória</h3>
+                    <p class="card-description">Nosso algoritmo de IA cria sensibilidade personalizada para seu estilo de jogo. Gere configurações de até 200% otimizadas para sua jogabilidade.</p>
+                    <button class="card-btn" id="homeRandomBtn">Gerar Sensi Personalizada</button>
+                </div>
+                
+                <!-- Sensibilidade por Arma -->
+                <div class="feature-card">
+                    <i class="fas fa-gun card-icon"></i>
+                    <h3 class="card-title">Sensibilidade por Arma</h3>
+                    <p class="card-description">Configurações específicas para cada categoria de arma do Free Fire 2026. Otimize sua mira para AR, SMG, Sniper e todas as armas do jogo.</p>
+                    <button class="card-btn secondary" id="homeWeaponBtn">Escolher Arma</button>
+                </div>
+                
+                <!-- DPI (Android) -->
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt card-icon"></i>
+                    <h3 class="card-title">DPI (Android)</h3>
+                    <p class="card-description">Ajuste de DPI para dispositivos Android. Encontre a configuração perfeita para seu dispositivo e maximize sua precisão no Free Fire 2026.</p>
+                    <button class="card-btn secondary" id="homeDpiBtn">Ajustar DPI</button>
+                </div>
+                
+                <!-- OTIMIZAÇÃO -->
+                <div class="feature-card">
+                    <i class="fas fa-bolt card-icon"></i>
+                    <h3 class="card-title">Otimização</h3>
+                    <p class="card-description">Acesse as funções de otimização do celular e do Free Fire em uma aba dedicada.</p>
+                    <button class="card-btn download" id="optimizationBtn">
+                        <i class="fas fa-gauge-high"></i> Abrir Otimização
+                    </button>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Pro Settings Page -->
+        <div class="page" id="proPage">
+            <a href="#" class="back-home" id="backFromPro">
+                <i class="fas fa-arrow-left"></i> Voltar para o Início
+            </a>
+            
+            <div class="settings-container">
+                <h2 class="settings-title"><i class="fas fa-crown"></i> Sensi dos Famosos 2026</h2>
+                <p style="color: rgba(240, 248, 255, 0.8); margin-bottom: 30px; font-size: 1.2rem; position: relative; z-index: 1;">Escolha um jogador profissional para ver suas configurações otimizadas para o Free Fire 2026.</p>
+                
+                <!-- Filter Buttons -->
+                <div class="filter-container">
+                    <button class="filter-btn todos active" data-filter="todos">Todos</button>
+                    <button class="filter-btn capa" data-filter="capa">+ Capa (Agressivo)</button>
+                    <button class="filter-btn controle" data-filter="controle">+ Controle (Precisão)</button>
+                </div>
+                
+                <div class="selection-grid" id="proSelectionGrid">
+                    <!-- Pro players will be dynamically inserted here -->
+                </div>
+                
+                <div id="proSettingsDisplay">
+                    <!-- Pro settings will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- 2-3 Dedos Settings Page -->
+        <div class="page" id="twoThreePage">
+            <a href="#" class="back-home" id="backFromTwoThree">
+                <i class="fas fa-arrow-left"></i> Voltar para o Início
+            </a>
+            
+            <div class="settings-container">
+                <h2 class="settings-title"><i class="fas fa-hand-peace"></i> Sensibilidade 2-3 Dedos</h2>
+                <p style="color: rgba(240, 248, 255, 0.8); margin-bottom: 30px; font-size: 1.2rem; position: relative; z-index: 1;">Configurações otimizadas para jogadores que usam 2 ou 3 dedos no Free Fire 2026. Sensibilidades testadas e eficientes.</p>
+                
+                <div class="selection-grid" id="twoThreeSelectionGrid">
+                    <!-- 2-3 dedos options will be dynamically inserted here -->
+                </div>
+                
+                <div id="twoThreeSettingsDisplay">
+                    <!-- 2-3 dedos settings will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Random Settings Page -->
+        <div class="page" id="randomPage">
+            <a href="#" class="back-home" id="backFromRandom">
+                <i class="fas fa-arrow-left"></i> Voltar para o Início
+            </a>
+            <div class="settings-container">
+                <h2 class="settings-title"><i class="fas fa-wand-magic-sparkles"></i> Gerador Personalizado</h2>
+                <p style="color:rgba(240,248,255,.8);margin-bottom:24px;font-size:1.1rem;position:relative;z-index:1;">Monte seu perfil e gere uma configuração ajustada ao seu estilo. O resultado é uma recomendação do algoritmo, não uma alteração automática no jogo.</p>
+                <div class="generator-form">
+                    <div class="form-field"><label>📱 Perfil do aparelho</label><select id="genDevice"><option value="entrada">Entrada / básico</option><option value="intermediario" selected>Intermediário</option><option value="potente">Potente</option><option value="gamer">Gamer / alto desempenho</option></select></div>
+                    <div class="form-field"><label>👆 Dedos</label><select id="genFingers"><option value="2">2 dedos</option><option value="3" selected>3 dedos</option><option value="4">4 dedos</option><option value="5">5 dedos</option></select></div>
+                    <div class="form-field"><label>🎯 Estilo</label><select id="genStyle"><option value="controle">Controle / precisão</option><option value="equilibrado" selected>Equilibrado</option><option value="capa">Capa / agressivo</option><option value="rush">Rush / velocidade</option></select></div>
+                    <div class="form-field"><label>🔫 Foco</label><select id="genWeapon"><option value="geral" selected>Geral</option><option value="smg">SMG / curta distância</option><option value="shotgun">Escopeta</option><option value="ar">AR / médio alcance</option><option value="sniper">Sniper / longa distância</option></select></div>
+                    <div class="form-field"><label>📐 DPI</label><input id="genDpi" type="number" min="300" max="1200" step="10" value="600"><div class="form-help">Entre 300 e 1200. Se não souber, use 600.</div></div>
+                    <div class="form-field"><label>⚡ Intensidade: <span id="genIntensityValue">70</span>%</label><input id="genIntensity" type="range" min="30" max="100" value="70"><div class="form-help">Maior intensidade = sensibilidade mais rápida.</div></div>
+                </div>
+                <div style="text-align:center;margin-bottom:30px;position:relative;z-index:1;display:flex;justify-content:center;gap:12px;flex-wrap:wrap;">
+                    <button class="card-btn" id="generateRandomBtn" style="font-size:1.15rem;padding:18px 34px;"><i class="fas fa-wand-magic-sparkles"></i> Gerar Minha Sensi</button>
+                    <button class="card-btn secondary" id="clearGeneratorBtn" style="font-size:1rem;padding:18px 24px;"><i class="fas fa-rotate-left"></i> Limpar</button>
+                </div>
+                <div id="randomSettingsDisplay"></div>
+                <div class="history-panel">
+                    <div class="history-title"><h3><i class="fas fa-star"></i> Minhas Favoritas</h3><button class="card-btn secondary" id="clearFavoritesBtn" style="padding:9px 14px;font-size:.8rem;">Limpar</button></div>
+                    <div id="favoritesList" class="history-list"></div>
+                </div>
+                <div class="history-panel">
+                    <div class="history-title"><h3><i class="fas fa-clock-rotate-left"></i> Histórico</h3><button class="card-btn secondary" id="clearHistoryBtn" style="padding:9px 14px;font-size:.8rem;">Limpar</button></div>
+                    <div id="historyList" class="history-list"></div>
+                </div>
+                <div class="mobile-note"><i class="fas fa-mobile-screen-button"></i> No celular, deslize a barra superior para acessar todas as áreas.</div>
+            </div>
+        </div>
+        
+        <!-- Weapon Settings Page -->
+        <div class="page" id="weaponPage">
+            <a href="#" class="back-home" id="backFromWeapon">
+                <i class="fas fa-arrow-left"></i> Voltar para o Início
+            </a>
+            
+            <div class="settings-container">
+                <h2 class="settings-title"><i class="fas fa-gun"></i> Sensibilidade por Arma</h2>
+                <p style="color: rgba(240, 248, 255, 0.8); margin-bottom: 30px; font-size: 1.2rem; position: relative; z-index: 1;">Selecione o tipo de arma para ver as configurações otimizadas para o Free Fire 2026.</p>
+                
+                <div class="selection-grid" id="weaponSelectionGrid">
+                    <!-- Weapons will be dynamically inserted here -->
+                </div>
+                
+                <div id="weaponSettingsDisplay">
+                    <!-- Weapon settings will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- DPI Settings Page -->
+        <div class="page" id="dpiPage">
+            <a href="#" class="back-home" id="backFromDpi">
+                <i class="fas fa-arrow-left"></i> Voltar para o Início
+            </a>
+            
+            <div class="settings-container">
+                <h2 class="settings-title"><i class="fas fa-mobile-alt"></i> Ajuste de DPI para Android</h2>
+                <p style="color: rgba(240, 248, 255, 0.8); margin-bottom: 30px; font-size: 1.2rem; position: relative; z-index: 1;">Selecione seu estilo de jogo para receber recomendações de DPI otimizadas para o Free Fire 2026.</p>
+                
+                <div class="selection-grid" id="dpiSelectionGrid">
+                    <!-- DPI options will be dynamically inserted here -->
+                </div>
+                
+                <div id="dpiSettingsDisplay">
+                    <!-- DPI settings will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+        <!-- Info Page -->
+        <div class="page" id="infoPage">
+            <a href="#" class="back-home" id="backFromInfo">
+                <i class="fas fa-arrow-left"></i> Voltar para o Início
+            </a>
+
+            <div class="settings-container info-card">
+                <div class="info-avatar" aria-label="Perfil">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h2 class="settings-title" style="justify-content:center;">
+                    <i class="fas fa-circle-info"></i> Informações
+                </h2>
+                <p>
+                    Bem-vindo ao painel <strong style="color:var(--primary);">MestreXit.ia VIP</strong>.
+                    Aqui você encontra as ferramentas de sensibilidade e otimização reunidas em um só lugar.
+                </p>
+
+                <div class="info-grid">
+                    <div class="info-item-card">
+                        <i class="fas fa-mobile-screen-button"></i>
+                        <strong>Marca</strong>
+                        <small id="infoMarca">Detectando...</small>
+                    </div>
+                    <div class="info-item-card">
+                        <i class="fas fa-mobile"></i>
+                        <strong>Modelo</strong>
+                        <small id="infoModelo">Detectando...</small>
+                    </div>
+                    <div class="info-item-card">
+                        <i class="fas fa-memory"></i>
+                        <strong>RAM</strong>
+                        <small id="infoRam">Não disponível</small>
+                    </div>
+                    <div class="info-item-card">
+                        <i class="fab fa-android"></i>
+                        <strong>Android</strong>
+                        <small id="infoAndroid">Detectando...</small>
+                    </div>
+                    <div class="info-item-card">
+                        <i class="fas fa-gauge-high"></i>
+                        <strong>FPS disponível</strong>
+                        <small id="infoFps">Medindo...</small>
+                    </div>
+                    <div class="info-item-card">
+                        <i class="fas fa-stopwatch"></i>
+                        <strong>Tempo em tempo real</strong>
+                        <small id="infoTempo">00:00:00</small>
+                    </div>
+                    <div class="info-item-card">
+                        <i class="fas fa-crown"></i>
+                        <strong>Plano atual</strong>
+                        <small id="infoPlano">Não informado</small>
+                    </div>
+                    <div class="info-item-card">
+                        <i class="fas fa-calendar-check"></i>
+                        <strong>Data de ativação</strong>
+                        <small id="infoAtivacao">Não informado</small>
+                    </div>
+                </div>
+
+                <div style="margin-top:28px; position:relative; z-index:1;">
+                    <button class="card-btn secondary" id="backToKeyFromInfo" style="max-width:420px; margin:0 auto;">
+                        <i class="fas fa-key"></i> Voltar para a tela de Key
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    <!-- Optimization Page -->
+    <div class="page" id="optimizationPage" style="max-width:1300px;margin:0 auto;padding:40px 20px;">
+        <a href="#" class="back-home" id="backFromOptimization">
+            <i class="fas fa-arrow-left"></i> Voltar para o Início
+        </a>
+        <div class="settings-container">
+            <h2 class="settings-title"><i class="fas fa-bolt"></i> Opções de Otimização</h2>
+            <p style="color:rgba(240,248,255,.8);margin-bottom:30px;font-size:1.1rem;position:relative;z-index:1;">Selecione uma ou mais funções e clique em Ativar.</p>
+            <div class="optimization-grid">
+                <label class="optimization-option" data-feature="celular">
+                    <input type="checkbox" class="optimization-check">
+                    <span class="optimization-icon"><i class="fas fa-mobile-screen-button"></i></span>
+                    <span><strong>Otimizar Celular</strong><small>Melhorar a experiência de desempenho do dispositivo.</small></span>
+                </label>
+                <label class="optimization-option" data-feature="freefire">
+                    <input type="checkbox" class="optimization-check">
+                    <span class="optimization-icon"><i class="fas fa-gamepad"></i></span>
+                    <span><strong>Otimizar Free Fire</strong><small>Aplicar a rotina de otimização da experiência do jogo.</small></span>
+                </label>
+                <label class="optimization-option" data-feature="memoria"><input type="checkbox" class="optimization-check"><span class="optimization-icon"><i class="fas fa-memory"></i></span><span><strong>Preparar Memória</strong><small>Checklist para liberar recursos antes de jogar.</small></span></label>
+                <label class="optimization-option" data-feature="rede"><input type="checkbox" class="optimization-check"><span class="optimization-icon"><i class="fas fa-wifi"></i></span><span><strong>Checar Rede</strong><small>Orientações para reduzir instabilidade durante a partida.</small></span></label>
+                <label class="optimization-option" data-feature="bateria"><input type="checkbox" class="optimization-check"><span class="optimization-icon"><i class="fas fa-battery-three-quarters"></i></span><span><strong>Modo Bateria</strong><small>Recomendações para equilibrar desempenho e consumo.</small></span></label>
+                <label class="optimization-option" data-feature="mira"><input type="checkbox" class="optimization-check"><span class="optimization-icon"><i class="fas fa-crosshairs"></i></span><span><strong>Ajuste de Mira</strong><small>Abre uma recomendação rápida de sensibilidade e DPI.</small></span></label>
+            </div>
+            <div class="optimization-action">
+                <button class="card-btn download" id="activateOptimization"><i class="fas fa-power-off"></i> Ativar</button>
+                <div class="optimization-progress" id="optimizationProgress"><div class="optimization-progress-bar" id="optimizationProgressBar"></div></div>
+                <div class="optimization-status" id="optimizationStatus"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="watermark" id="siteWatermark" style="display:none;">
+        <img src="https://i.postimg.cc/X7LLZwcm/file-00000000779471f585f8cb023dfdc1f3.png" alt="Watermark">
+    </div>
+    <footer id="siteFooter" style="display:none;">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="https://i.postimg.cc/X7LLZwcm/file-00000000779471f585f8cb023dfdc1f3.png" alt="Logo" style="height: 60px; width: auto; margin-bottom: 10px; border-radius: 5px;">
+                <br>MestreXit.ia VIP
+            </div>
+            <p>Sistema Inteligente de Sensibilidade para Free Fire 2026</p>
+            <p class="copyright">© 2026 Desenvolvido por <span style="color: var(--gold);">MestreXit</span>. Todas as configurações são otimizadas para Free Fire 2026 com sensibilidade de até 200%.</p>
+        </div>
+    </footer>
+    
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        <img src="https://i.postimg.cc/X7LLZwcm/file-00000000779471f585f8cb023dfdc1f3.png" alt="Logo" style="height: 20px; width: auto; vertical-align: middle; margin-right: 10px; border-radius: 2px;">
+        Configurações copiadas para a área de transferência!
+    </div>
+
+    <!-- Modal Status Key -->
+    <div class="modal-status" id="modalStatus">
+        <div class="modal-content">
+            <div class="modal-close" id="closeStatus"><i class="fas fa-times"></i></div>
+            <div class="modal-header">
+                <h2><i class="fas fa-key"></i> Status da Key</h2>
+                <p>Informações da sua licença ativa</p>
+            </div>
+            <div class="status-info">
+                <div class="info-item"><span class="info-label">Marca:</span><span class="info-value" id="stBrand">Detectando...</span></div>
+                <div class="info-item"><span class="info-label">Modelo:</span><span class="info-value" id="stModel">Detectando...</span></div>
+                <div class="info-item"><span class="info-label">RAM:</span><span class="info-value" id="stRam">Detectando...</span></div>
+                <div class="info-item"><span class="info-label">Android:</span><span class="info-value" id="stAndroid">Detectando...</span></div>
+                <div class="info-item"><span class="info-label">FPS disponível:</span><span class="info-value" id="stFps">Calculando...</span></div>
+                <div class="info-item"><span class="info-label">Plano atual:</span><span class="info-value" id="stPlan">---</span></div>
+                <div class="info-item"><span class="info-label">Data de ativação:</span><span class="info-value" id="stActivated">---</span></div>
+                <div class="info-item"><span class="info-label">Expira em:</span><span class="info-value" id="stExpires">---</span></div>
+                <div class="info-item"><span class="info-label">Contador em tempo real:</span><span class="info-value highlight" id="stRemaining">---</span></div>
+                <div class="info-item"><span class="info-label">Dispositivo:</span><span class="info-value" id="stDevice">---</span></div>
+                <div class="info-item"><span class="info-label">Chave:</span><span class="info-value" id="stKey">---</span></div>
+            </div>
+            <div style="margin-top: 25px; text-align: center;">
+                <button class="card-btn" id="logoutKeyBtn" style="padding: 10px 20px; font-size: 0.9rem;">Sair / Trocar Key</button>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module">
+
+        // ===== KEY ACCESS (FIREBASE FIRESTORE) =====
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+        // TODO: Substitua pelas mesmas credenciais do Firebase usadas no gerador
+        const firebaseConfig={
+apiKey:"AIzaSyASZW0rPGb_-xnsWjlFkV0-d3UH6MNVzYo",
+authDomain:"keys-gerador.firebaseapp.com",
+projectId:"keys-gerador",
+storageBucket:"keys-gerador.firebasestorage.app",
+messagingSenderId:"181530577721",
+appId:"1:181530577721:web:0bb38f186b5241c776f6e8",
+measurementId:"G-S0558S0WPZ"
+};
+
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        const KEY_UNLOCKED = 'mestrexit_key_unlocked';
+        const ACTIVE_KEY = 'mestrexit_active_key';
+        const keyPage = document.getElementById('keyPage');
+        const accessKeyInput = document.getElementById('accessKey');
+        const enterKeyBtn = document.getElementById('enterKeyBtn');
+        const keyStatus = document.getElementById('keyStatus');
+        const rememberKey = document.getElementById('rememberKey');
+        const REMEMBERED_KEY = 'mestrexit_remembered_key';
+        const mainHeader = document.getElementById('mainHeader');
+        const siteFooter = document.getElementById('siteFooter');
+        const siteWatermark = document.getElementById('siteWatermark');
+
+        let activeKeyData = null;
+
+        function unlockSite(key, data) {
+            localStorage.setItem(KEY_UNLOCKED, '1');
+            localStorage.setItem(ACTIVE_KEY, key);
+            activeKeyData = { key, ...data };
+            
+            keyPage.classList.remove('active');
+            document.getElementById('homePage').classList.add('active');
+            mainHeader.style.display = '';
+            siteFooter.style.display = '';
+            siteWatermark.style.display = '';
+            window.scrollTo({top:0, behavior:'smooth'});
+        }
+
+        let statusTimer = null;
+        let fpsFrameCount = 0, fpsLastTime = performance.now(), detectedFps = 0;
+
+        function detectDeviceInfo() {
+            const ua = navigator.userAgent || '';
+            let brand = 'Desconhecida';
+            if (/Samsung|SM-/i.test(ua)) brand = 'Samsung';
+            else if (/Xiaomi|Redmi|Mi |POCO/i.test(ua)) brand = /Redmi/i.test(ua) ? 'Redmi' : /POCO/i.test(ua) ? 'POCO' : 'Xiaomi';
+            else if (/Motorola|Moto /i.test(ua)) brand = 'Motorola';
+            else if (/Infinix/i.test(ua)) brand = 'Infinix';
+            else if (/TECNO/i.test(ua)) brand = 'TECNO';
+            else if (/Huawei|HUAWEI/i.test(ua)) brand = 'Huawei';
+            else if (/OPPO/i.test(ua)) brand = 'OPPO';
+            else if (/vivo/i.test(ua)) brand = 'vivo';
+            else if (/iPhone|iPad/i.test(ua)) brand = 'Apple';
+
+            const androidMatch = ua.match(/Android\s([0-9.]+)/i);
+            const modelMatch = ua.match(/Android[^;)]*;\s*(?:[^;]+;\s*)?([^;)]+?)(?:\s+Build\/[^;)]+)?[;)]/i);
+            const model = modelMatch ? modelMatch[1].trim() : (ua.match(/;\s*([^;)]+?)\s+Build\//i)?.[1]?.trim() || 'Não identificado pelo navegador');
+            const ram = navigator.deviceMemory ? `${navigator.deviceMemory} GB (estimada)` : 'Não disponível';
+
+            document.getElementById('stBrand').textContent = brand;
+            document.getElementById('stModel').textContent = model;
+            document.getElementById('stRam').textContent = ram;
+            document.getElementById('stAndroid').textContent = androidMatch ? `Android ${androidMatch[1]}` : 'Não identificado';
+        }
+
+        function measureBrowserFps() {
+            fpsFrameCount++;
+            const now = performance.now();
+            if (now - fpsLastTime >= 1000) {
+                detectedFps = Math.round((fpsFrameCount * 1000) / (now - fpsLastTime));
+                fpsFrameCount = 0;
+                fpsLastTime = now;
+                const el = document.getElementById('stFps');
+                if (el) el.textContent = `${detectedFps} FPS (navegador)`;
+            }
+            requestAnimationFrame(measureBrowserFps);
+        }
+        requestAnimationFrame(measureBrowserFps);
+
+        function formatRemaining(diff) {
+            if (diff <= 0) return 'Expirado';
+            let seconds = Math.floor(diff / 1000);
+            const days = Math.floor(seconds / 86400); seconds %= 86400;
+            const hours = Math.floor(seconds / 3600); seconds %= 3600;
+            const mins = Math.floor(seconds / 60);
+            const secs = seconds % 60;
+            return `${days}d ${String(hours).padStart(2,'0')}h ${String(mins).padStart(2,'0')}m ${String(secs).padStart(2,'0')}s`;
+        }
+
+        function updateKeyStatus() {
+            if (!activeKeyData) return;
+            const remaining = document.getElementById('stRemaining');
+            if (!activeKeyData.expires) {
+                document.getElementById('stExpires').textContent = 'Nunca';
+                remaining.textContent = 'Ilimitado';
+                remaining.style.color = 'var(--success)';
+            } else {
+                const diff = activeKeyData.expires - Date.now();
+                document.getElementById('stExpires').textContent = new Date(activeKeyData.expires).toLocaleString('pt-BR');
+                remaining.textContent = formatRemaining(diff);
+                remaining.style.color = diff <= 0 ? 'var(--danger)' : 'var(--success)';
+            }
+        }
+
+        function showKeyStatus() {
+            if (!activeKeyData) return;
+            document.getElementById('stKey').textContent = activeKeyData.key || '---';
+            document.getElementById('stPlan').textContent = activeKeyData.duration === 'permanent' ? 'Permanente' : (activeKeyData.duration ? activeKeyData.duration + (String(activeKeyData.duration).endsWith('h') ? '' : ' dias') : 'Não informado');
+            document.getElementById('stDevice').textContent = activeKeyData.device || getDeviceId();
+            document.getElementById('stActivated').textContent = activeKeyData.activatedAt ? new Date(activeKeyData.activatedAt).toLocaleString('pt-BR') : 'Não registrada';
+            detectDeviceInfo();
+            updateKeyStatus();
+            document.getElementById('modalStatus').classList.add('active');
+            clearInterval(statusTimer);
+            statusTimer = setInterval(updateKeyStatus, 1000);
+        }
+
+        // Fechar modal
+        document.getElementById('closeStatus').onclick = () => {
+            document.getElementById('modalStatus').classList.remove('active');
+        };
+        window.onclick = (event) => {
+            if (event.target == document.getElementById('modalStatus')) {
+                document.getElementById('modalStatus').classList.remove('active');
+            }
+        };
+
+        // Evento de clique no nome MestreXit
+        document.getElementById('userCreditBtn').onclick = showKeyStatus;
+
+        document.getElementById('logoutKeyBtn').onclick = () => {
+            localStorage.removeItem(KEY_UNLOCKED);
+            localStorage.removeItem(ACTIVE_KEY);
+            activeKeyData = null;
+            document.getElementById('modalStatus').classList.remove('active');
+            Object.values(pages).forEach(p => p.classList.remove('active'));
+            keyPage.classList.add('active');
+            mainHeader.style.display = 'none';
+            siteFooter.style.display = 'none';
+            siteWatermark.style.display = 'none';
+            const remembered = localStorage.getItem(REMEMBERED_KEY);
+            accessKeyInput.value = remembered || '';
+            rememberKey.checked = !!remembered;
+            window.scrollTo({top:0, behavior:'smooth'});
+        };
+
+        // Gerar ou recuperar ID único do dispositivo (HWID / LocalStorage)
+        function getDeviceId() {
+            let devId = localStorage.getItem('mx_device_id');
+            if (!devId) {
+                const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+                let s = 'DEV-';
+                for(let i=0; i<12; i++) s += chars[Math.floor(Math.random()*chars.length)];
+                devId = s;
+                localStorage.setItem('mx_device_id', devId);
+            }
+            return devId;
+        }
+
+        async function tryKey() {
+            const keyVal = accessKeyInput.value.trim();
+            if (!keyVal) {
+                keyStatus.style.color = 'var(--danger)';
+                keyStatus.textContent = '⚠️ Digite uma Key para continuar.';
+                accessKeyInput.focus();
+                return;
+            }
+
+            if (rememberKey.checked) localStorage.setItem(REMEMBERED_KEY, keyVal);
+            else localStorage.removeItem(REMEMBERED_KEY);
+
+            keyStatus.style.color = 'var(--secondary)';
+            keyStatus.textContent = '🔄 Verificando key no Firebase...';
+
+            try {
+                const docRef = doc(db, "keys", keyVal);
+                const docSnap = await getDoc(docRef);
+
+                if (!docSnap.exists()) {
+                    keyStatus.style.color = 'var(--danger)';
+                    keyStatus.textContent = '❌ Key inválida ou não encontrada.';
+                    return;
+                }
+
+                const data = docSnap.data();
+
+                if (data.paused) {
+                    keyStatus.style.color = 'var(--danger)';
+                    keyStatus.textContent = '⏸️ Esta key está pausada pelo administrador.';
+                    return;
+                }
+
+                if (data.expires && Date.now() >= data.expires) {
+                    keyStatus.style.color = 'var(--danger)';
+                    keyStatus.textContent = '⏰ Esta key está expirada.';
+                    return;
+                }
+
+                const currentDevId = getDeviceId();
+
+                // Primeira ativação: grava o dispositivo, a data de ativação e a expiração.
+                // O prazo NÃO começa na criação da Key.
+                if (!data.device || data.device === '') {
+                    const now = Date.now();
+                    const updates = { device: currentDevId };
+
+                    if (data.activatedAt == null) {
+                        updates.activatedAt = now;
+
+                        if (data.duration === 'permanent') {
+                            updates.expires = null;
+                        } else {
+                            const rawDuration = String(data.duration || '').trim().toLowerCase();
+                            let durationMs;
+                            if (/^\d+(?:\.\d+)?h$/.test(rawDuration)) {
+                                durationMs = Number.parseFloat(rawDuration) * 3600000;
+                            } else {
+                                const days = Number(rawDuration);
+                                durationMs = Number.isFinite(days) && days > 0 ? days * 86400000 : NaN;
+                            }
+                            if (!Number.isFinite(durationMs) || durationMs <= 0) {
+                                keyStatus.style.color = 'var(--danger)';
+                                keyStatus.textContent = '❌ Duração da key inválida. Use dias ou 1h.';
+                                return;
+                            }
+                            updates.expires = now + durationMs;
+                        }
+                    }
+
+                    await import("https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js").then(async ({ updateDoc }) => {
+                        await updateDoc(docRef, updates);
+                    });
+
+                    // Atualiza os dados locais imediatamente para o painel mostrar a validade correta.
+                    Object.assign(data, updates);
+                } else if (data.device !== currentDevId) {
+                    keyStatus.style.color = 'var(--danger)';
+                    keyStatus.textContent = '❌ Esta key já está em uso em outro aparelho/navegador!';
+                    return;
+                }
+
+                keyStatus.style.color = 'var(--success)';
+                keyStatus.textContent = '✓ Key válida! Liberando acesso...';
+                setTimeout(() => unlockSite(keyVal, data), 600);
+
+            } catch (err) {
+                console.error("Erro ao verificar key:", err);
+                keyStatus.style.color = 'var(--danger)';
+                keyStatus.textContent = '❌ Erro de conexão com o Firebase.';
+            }
+        }
+
+        window.tryKey = tryKey;
+        enterKeyBtn.addEventListener('click', tryKey);
+        accessKeyInput.addEventListener('keydown', e => {
+            if (e.key === 'Enter') tryKey();
+        });
+
+        const rememberedKey = localStorage.getItem(REMEMBERED_KEY);
+        if (rememberedKey) {
+            accessKeyInput.value = rememberedKey;
+            rememberKey.checked = true;
+        }
+
+        if (localStorage.getItem(KEY_UNLOCKED) === '1') {
+            const savedKey = localStorage.getItem(ACTIVE_KEY);
+            if (savedKey) {
+                // Nunca libera automaticamente uma Key salva sem revalidar sua validade.
+                accessKeyInput.value = savedKey;
+                tryKey();
+            } else {
+                localStorage.removeItem(KEY_UNLOCKED);
+            }
+        }
+
+        // Data for the generator - Updated for Free Fire 2026 (up to 200%)
+        const proPlayers2026 = {
+            "Nobru 2026": { 
+                geral: 180, mira: 165, reddot: 155, x2: 145, x4: 130, miraSniper: 110,
+                descricao: "Configuração agressiva para jogadas ofensivas",
+                dpi: 650, estilo: "Agressivo 4 dedos", categoria: "capa"
+            },
+            "Cerrato Elite": { 
+                geral: 195, mira: 180, reddot: 170, x2: 160, x4: 145, miraSniper: 125,
+                descricao: "Alta sensibilidade para rotação rápida",
+                dpi: 700, estilo: "Claw avançado", categoria: "capa"
+            },
+            "Loud Edition": { 
+                geral: 170, mira: 150, reddot: 140, x2: 130, x4: 120, miraSniper: 100,
+                descricao: "Equilíbrio perfeito entre controle e velocidade",
+                dpi: 600, estilo: "Híbrido 3-4 dedos", categoria: "controle"
+            },
+            "Imperador Pro": { 
+                geral: 185, mira: 170, reddot: 160, x2: 150, x4: 135, miraSniper: 115,
+                descricao: "Foco em precisão com alta sensibilidade",
+                dpi: 680, estilo: "Precisão extrema", categoria: "controle"
+            },
+            "Nova Geração": { 
+                geral: 200, mira: 190, reddot: 180, x2: 170, x4: 155, miraSniper: 140,
+                descricao: "Máxima sensibilidade para jogadores experientes",
+                dpi: 750, estilo: "Claw profissional", categoria: "capa"
+            },
+            "DEW Pro 2026": { 
+                geral: 175, mira: 160, reddot: 150, x2: 140, x4: 125, miraSniper: 105,
+                descricao: "Configuração equilibrada para combate versátil",
+                dpi: 620, estilo: "Claw 4 dedos", categoria: "controle"
+            },
+            "Rai Star Pro": { 
+                geral: 190, mira: 175, reddot: 165, x2: 155, x4: 140, miraSniper: 120,
+                descricao: "Alta sensibilidade para rotação e mira rápida",
+                dpi: 710, estilo: "Agressivo 4 dedos", categoria: "capa"
+            },
+            "Moshi Elite": { 
+                geral: 165, mira: 150, reddot: 140, x2: 130, x4: 115, miraSniper: 95,
+                descricao: "Controle preciso para tiros de longa distância",
+                dpi: 580, estilo: "Híbrido 3-4 dedos", categoria: "controle"
+            },
+            "Killer FF": { 
+                geral: 200, mira: 185, reddot: 175, x2: 165, x4: 150, miraSniper: 135,
+                descricao: "Configuração extrema para jogadas agressivas",
+                dpi: 770, estilo: "Claw profissional", categoria: "capa"
+            },
+            "TheCruz Pro": { 
+                geral: 180, mira: 165, reddot: 155, x2: 145, x4: 130, miraSniper: 110,
+                descricao: "Estilo equilibrado para suporte e ofensiva",
+                dpi: 640, estilo: "Claw 4 dedos", categoria: "controle"
+            },
+            "Joena 2026": { 
+                geral: 170, mira: 155, reddot: 145, x2: 135, x4: 120, miraSniper: 100,
+                descricao: "Precisão e controle para combate tático",
+                dpi: 600, estilo: "Híbrido 3-4 dedos", categoria: "controle"
+            },
+            "MT7 Pro": { 
+                geral: 185, mira: 170, reddot: 160, x2: 150, x4: 135, miraSniper: 115,
+                descricao: "Configuração ofensiva para domínio de área",
+                dpi: 660, estilo: "Claw 4 dedos", categoria: "capa"
+            },
+            "Bops Elite": { 
+                geral: 195, mira: 180, reddot: 170, x2: 160, x4: 145, miraSniper: 125,
+                descricao: "Alta sensibilidade para jogadas rápidas e precisas",
+                dpi: 720, estilo: "Claw avançado", categoria: "capa"
+            },
+            "But 2026": { 
+                geral: 175, mira: 160, reddot: 150, x2: 140, x4: 125, miraSniper: 105,
+                descricao: "Configuração versátil para diversos estilos de jogo",
+                dpi: 630, estilo: "Claw 4 dedos", categoria: "controle"
+            },
+            // Novos jogadores famosos adicionados
+            "Fantasensi Pro": { 
+                geral: 195, mira: 185, reddot: 175, x2: 165, x4: 150, miraSniper: 130,
+                descricao: "Configuração extrema para jogadas de capa máxima",
+                dpi: 780, estilo: "Claw extremo 5 dedos", categoria: "capa"
+            },
+            "Cerol Elite": { 
+                geral: 190, mira: 180, reddot: 170, x2: 160, x4: 145, miraSniper: 125,
+                descricao: "Sensibilidade alta para rush e jogadas rápidas",
+                dpi: 750, estilo: "Agressivo 4 dedos", categoria: "capa"
+            },
+            "Boca de 09 Pro": { 
+                geral: 170, mira: 155, reddot: 145, x2: 135, x4: 120, miraSniper: 100,
+                descricao: "Configuração equilibrada com foco em precisão",
+                dpi: 620, estilo: "Controle 3 dedos", categoria: "controle"
+            },
+            "Black Pro 2026": { 
+                geral: 185, mira: 170, reddot: 160, x2: 150, x4: 135, miraSniper: 115,
+                descricao: "Estilo híbrido para jogadas versáteis e precisas",
+                dpi: 680, estilo: "Híbrido 4 dedos", categoria: "controle"
+            },
+            "N4444 Extreme": { 
+                geral: 200, mira: 190, reddot: 180, x2: 170, x4: 155, miraSniper: 140,
+                descricao: "Configuração máxima para domínio total no combate",
+                dpi: 800, estilo: "Claw profissional", categoria: "capa"
+            },
+            "CJX Pro": { 
+                geral: 175, mira: 160, reddot: 150, x2: 140, x4: 125, miraSniper: 105,
+                descricao: "Configuração equilibrada para suporte e ofensiva",
+                dpi: 630, estilo: "Claw 4 dedos", categoria: "controle"
+            },
+            "LOUD AYR": { 
+                geral: 185, mira: 170, reddot: 160, x2: 150, x4: 135, miraSniper: 115,
+                descricao: "Configuração ofensiva para domínio de área",
+                dpi: 690, estilo: "Agressivo 4 dedos", categoria: "capa"
+            },
+            "Foxy Pro": { 
+                geral: 165, mira: 150, reddot: 140, x2: 130, x4: 115, miraSniper: 95,
+                descricao: "Controle máximo para tiros precisos à distância",
+                dpi: 590, estilo: "Precisão 3 dedos", categoria: "controle"
+            },
+            "Squadra Elite": { 
+                geral: 190, mira: 175, reddot: 165, x2: 155, x4: 140, miraSniper: 120,
+                descricao: "Alta sensibilidade para jogadas em equipe agressivas",
+                dpi: 730, estilo: "Claw 4 dedos", categoria: "capa"
+            },
+            "Tropa de Elite": { 
+                geral: 180, mira: 165, reddot: 155, x2: 145, x4: 130, miraSniper: 110,
+                descricao: "Configuração versátil para diversos mapas e modos",
+                dpi: 650, estilo: "Híbrido 4 dedos", categoria: "controle"
+            },
+            "KAKASHI FF": { 
+                geral: 195, mira: 180, reddot: 170, x2: 160, x4: 145, miraSniper: 125,
+                descricao: "Configuração rápida para jogadas surpresa",
+                dpi: 760, estilo: "Claw extremo", categoria: "capa"
+            },
+            "UNKNOWN PRO": { 
+                geral: 185, mira: 170, reddot: 160, x2: 150, x4: 135, miraSniper: 115,
+                descricao: "Configuração misteriosa com desempenho máximo",
+                dpi: 700, estilo: "Claw avançado", categoria: "capa"
+            }
+        };
+
+        // Mais presets de jogadores/famosos — valores são presets do gerador, não configurações oficiais.
+        Object.assign(proPlayers2026, {
+            "Bak 2026": { geral: 190, mira: 178, reddot: 168, x2: 158, x4: 142, miraSniper: 122, descricao: "Preset de alta velocidade para capa e movimentação", dpi: 720, estilo: "Claw 4 dedos", categoria: "capa" },
+            "Thurzin 2026": { geral: 185, mira: 172, reddot: 162, x2: 152, x4: 138, miraSniper: 118, descricao: "Preset equilibrado para precisão e trocas rápidas", dpi: 690, estilo: "Híbrido 4 dedos", categoria: "controle" },
+            "Kroonos 2026": { geral: 195, mira: 182, reddot: 172, x2: 162, x4: 147, miraSniper: 128, descricao: "Preset agressivo para puxadas rápidas", dpi: 740, estilo: "Claw avançado", categoria: "capa" },
+            "Two9 2026": { geral: 180, mira: 168, reddot: 158, x2: 148, x4: 134, miraSniper: 114, descricao: "Preset focado em estabilidade e precisão", dpi: 670, estilo: "4 dedos controle", categoria: "controle" },
+            "JapaBKR 2026": { geral: 192, mira: 180, reddot: 170, x2: 160, x4: 145, miraSniper: 124, descricao: "Preset rápido para combate próximo", dpi: 730, estilo: "Claw 4 dedos", categoria: "capa" },
+            "Ruan da VK 2026": { geral: 188, mira: 175, reddot: 165, x2: 155, x4: 140, miraSniper: 120, descricao: "Preset híbrido para consistência em diferentes armas", dpi: 700, estilo: "Híbrido 4 dedos", categoria: "controle" },
+            "Fac 2026": { geral: 198, mira: 187, reddot: 177, x2: 167, x4: 152, miraSniper: 132, descricao: "Preset agressivo para capa e movimentação rápida", dpi: 760, estilo: "Claw profissional", categoria: "capa" },
+            "Babi 2026": { geral: 175, mira: 162, reddot: 152, x2: 142, x4: 127, miraSniper: 108, descricao: "Preset equilibrado para controle e precisão", dpi: 640, estilo: "3-4 dedos", categoria: "controle" },
+            "Federal 2026": { geral: 183, mira: 170, reddot: 160, x2: 150, x4: 136, miraSniper: 116, descricao: "Preset versátil para partidas competitivas", dpi: 680, estilo: "4 dedos", categoria: "controle" },
+            "Nobru Capa 2026": { geral: 200, mira: 190, reddot: 180, x2: 170, x4: 155, miraSniper: 138, descricao: "Preset agressivo de alta sensibilidade", dpi: 780, estilo: "Claw 5 dedos", categoria: "capa" },
+            "Cerol 2026": { geral: 190, mira: 178, reddot: 168, x2: 158, x4: 143, miraSniper: 123, descricao: "Preset rápido para rush e trocas próximas", dpi: 750, estilo: "Agressivo 4 dedos", categoria: "capa" },
+            "Mito 2026": { geral: 178, mira: 165, reddot: 155, x2: 145, x4: 130, miraSniper: 110, descricao: "Preset de controle para maior consistência", dpi: 650, estilo: "Híbrido 3-4 dedos", categoria: "controle" }
+        });
+        
+        const twoThreeSettings2026 = {
+            "Leve (2 dedos)": { 
+                geral: 160, mira: 145, reddot: 135, x2: 125, x4: 110, miraSniper: 90,
+                descricao: "Ideal para iniciantes que jogam com 2 dedos",
+                dpi: 400, recomendacao: "Perfeito para controle total e precisão",
+                categoria: "controle"
+            },
+            "Médio (2-3 dedos)": { 
+                geral: 175, mira: 160, reddot: 150, x2: 140, x4: 125, miraSniper: 105,
+                descricao: "Equilíbrio perfeito para jogadores intermediários",
+                dpi: 550, recomendacao: "Oferece boa rotação com controle",
+                categoria: "controle"
+            },
+            "Avançado (3 dedos)": { 
+                geral: 185, mira: 170, reddot: 160, x2: 150, x4: 135, miraSniper: 115,
+                descricao: "Para jogadores que dominam 3 dedos",
+                dpi: 650, recomendacao: "Rotações rápidas mantendo precisão",
+                categoria: "capa"
+            },
+            "Agressivo (2-3 dedos)": { 
+                geral: 195, mira: 180, reddot: 170, x2: 160, x4: 145, miraSniper: 125,
+                descricao: "Alta sensibilidade para jogadas ofensivas",
+                dpi: 700, recomendacao: "Ideal para rush e combate próximo",
+                categoria: "capa"
+            },
+            "Precisão (3 dedos)": { 
+                geral: 170, mira: 155, reddot: 145, x2: 135, x4: 120, miraSniper: 100,
+                descricao: "Foco em precisão para tiros de longa distância",
+                dpi: 600, recomendacao: "Controle máximo para snipers",
+                categoria: "controle"
+            }
+        };
+        
+        const weapons2026 = {
+            "AR (Assalto)": { 
+                geral: 175, mira: 160, reddot: 150, x2: 140, x4: 130, miraSniper: 110,
+                descricao: "Otimizado para rifles de assalto como AK47, M4A1, SCAR",
+                recomendacao: "Ideal para combate médio-longo alcance"
+            },
+            "SMG (Submetralhadora)": { 
+                geral: 190, mira: 175, reddot: 165, x2: 155, x4: 140, miraSniper: 120,
+                descricao: "Perfeito para MP40, P90, Thompson em combate curto",
+                recomendacao: "Alta sensibilidade para movimentos rápidos"
+            },
+            "Sniper": { 
+                geral: 150, mira: 130, reddot: 120, x2: 110, x4: 100, miraSniper: 85,
+                descricao: "Configuração de precisão para AWM, Kar98k, M82B",
+                recomendacao: "Baixa sensibilidade para precisão extrema"
+            },
+            "Shotgun (Escopeta)": { 
+                geral: 200, mira: 185, reddot: 175, x2: 165, x4: 150, miraSniper: 130,
+                descricao: "Máxima sensibilidade para M1014, SPAS12, M1887",
+                recomendacao: "Para combate corpo a corpo agressivo"
+            },
+            "Pistola": { 
+                geral: 185, mira: 170, reddot: 160, x2: 150, x4: 135, miraSniper: 115,
+                descricao: "Otimizado para Desert Eagle, M500, G18",
+                recomendacao: "Controle rápido em situações de emergência"
+            },
+            "LMG (Metralhadora)": { 
+                geral: 165, mira: 150, reddot: 140, x2: 130, x4: 120, miraSniper: 105,
+                descricao: "Para M60, M249, MG3 com controle de recuo",
+                recomendacao: "Sensibilidade média para controle sustentado"
+            }
+        };
+        
+        const dpiSettings2026 = {
+            "Baixo (1-2 dedos)": { 
+                dpi: 400, sensibilidadeGeral: 180, 
+                descricao: "Ideal para iniciantes ou jogadores que usam 1-2 dedos",
+                recomendacao: "Oferece maior controle para movimentos básicos"
+            },
+            "Médio (2-3 dedos)": { 
+                dpi: 550, sensibilidadeGeral: 165, 
+                descricao: "Perfeito para jogadores intermediários com 2-3 dedos",
+                recomendacao: "Equilíbrio entre controle e velocidade de rotação"
+            },
+            "Alto (4 dedos)": { 
+                dpi: 700, sensibilidadeGeral: 150, 
+                descricao: "Otimizado para jogadores avançados com 4 dedos",
+                recomendacao: "Permite rotações rápidas mantendo precisão"
+            },
+            "Claw (4+ dedos)": { 
+                dpi: 850, sensibilidadeGeral: 135, 
+                descricao: "Configuração profissional para claw avançado",
+                recomendacao: "Máximo controle com movimentos complexos"
+            },
+            "Extremo (Pro)": { 
+                dpi: 1000, sensibilidadeGeral: 120, 
+                descricao: "Para jogadores profissionais que exigem precisão extrema",
+                recomendacao: "DPI máximo com sensibilidade ajustada para precisão"
+            }
+        };
+        
+        // DOM Elements
+        const pages = {
+            home: document.getElementById('homePage'),
+            pro: document.getElementById('proPage'),
+            twoThree: document.getElementById('twoThreePage'),
+            random: document.getElementById('randomPage'),
+            weapon: document.getElementById('weaponPage'),
+            dpi: document.getElementById('dpiPage'),
+            optimization: document.getElementById('optimizationPage'),
+            info: document.getElementById('infoPage')
+        };
+        
+        const navButtons = {
+            home: document.getElementById('homeBtn'),
+            pro: document.getElementById('proBtn'),
+            twoThree: document.getElementById('twoThreeBtn'),
+            random: document.getElementById('randomBtn'),
+            weapon: document.getElementById('weaponBtn'),
+            dpi: document.getElementById('dpiBtn'),
+            optimization: document.getElementById('optimizationNavBtn'),
+            info: document.getElementById('infoBtn')
+        };
+        
+        const homeButtons = {
+            pro: document.getElementById('homeProBtn'),
+            twoThree: document.getElementById('homeTwoThreeBtn'),
+            random: document.getElementById('homeRandomBtn'),
+            weapon: document.getElementById('homeWeaponBtn'),
+            dpi: document.getElementById('homeDpiBtn'),
+            optimization: document.getElementById('optimizationBtn')
+        };
+        
+        const backButtons = {
+            pro: document.getElementById('backFromPro'),
+            twoThree: document.getElementById('backFromTwoThree'),
+            random: document.getElementById('backFromRandom'),
+            weapon: document.getElementById('backFromWeapon'),
+            dpi: document.getElementById('backFromDpi'),
+            optimization: document.getElementById('backFromOptimization'),
+            info: document.getElementById('backFromInfo')
+        };
+        
+        const notification = document.getElementById('notification');
+        let currentPage = 'home';
+        let currentSettings = {};
+        let currentType = "";
+        let currentFilter = "todos";
+        
+        // Initialize the page
+        function init() {
+            // Set up navigation
+            setupNavigation();
+            
+            // Set up home page buttons
+            setupHomeButtons();
+            
+            // Set up back buttons
+            setupBackButtons();
+            
+            // Initialize pro players page
+            initProPage();
+            
+            // Initialize 2-3 dedos page
+            initTwoThreePage();
+            
+            // Initialize random page
+            initRandomPage();
+            
+            // Initialize weapon page
+            initWeaponPage();
+            
+            // Initialize DPI page
+            initDpiPage();
+            
+            // Carrega histórico/favoritos sem gerar uma configuração automaticamente
+            renderHistory();
+            renderFavorites();
+            
+            setupOptimization();
+            setupInfoPage();
+
+            // Setup filter buttons
+            setupFilterButtons();
+        }
+        
+        function setupNavigation() {
+            // Navigation buttons
+            navButtons.home.addEventListener('click', (e) => {
+                e.preventDefault();
+                switchPage('home');
+            });
+            
+            navButtons.pro.addEventListener('click', (e) => {
+                e.preventDefault();
+                switchPage('pro');
+            });
+            
+            navButtons.twoThree.addEventListener('click', (e) => {
+                e.preventDefault();
+                switchPage('twoThree');
+            });
+            
+            navButtons.random.addEventListener('click', (e) => {
+                e.preventDefault();
+                switchPage('random');
+            });
+            
+            navButtons.weapon.addEventListener('click', (e) => {
+                e.preventDefault();
+                switchPage('weapon');
+            });
+            
+            navButtons.dpi.addEventListener('click', (e) => {
+                e.preventDefault();
+                switchPage('dpi');
+            });
+
+            navButtons.optimization.addEventListener('click', (e) => {
+                e.preventDefault();
+                showPage('optimization');
+            });
+
+            navButtons.info.addEventListener('click', (e) => {
+                e.preventDefault();
+                switchPage('info');
+            });
+            
+            // Home logo link
+            document.getElementById('homeLink').addEventListener('click', (e) => {
+                e.preventDefault();
+                switchPage('home');
+            });
+        }
+        
+        function setupHomeButtons() {
+            homeButtons.pro.addEventListener('click', () => {
+                switchPage('pro');
+            });
+            
+            homeButtons.twoThree.addEventListener('click', () => {
+                switchPage('twoThree');
+            });
+            
+            homeButtons.random.addEventListener('click', () => {
+                switchPage('random');
+            });
+            
+            homeButtons.weapon.addEventListener('click', () => {
+                switchPage('weapon');
+            });
+            
+            homeButtons.dpi.addEventListener('click', () => {
+                switchPage('dpi');
+            });
+            
+            homeButtons.optimization.addEventListener('click', () => {
+                switchPage('optimization');
+            });
+        }
+        
+        function setupBackButtons() {
+            backButtons.pro.addEventListener('click', (e) => {
+                e.preventDefault();
+                switchPage('home');
+            });
+            
+            backButtons.twoThree.addEventListener('click', (e) => {
+                e.preventDefault();
+                switchPage('home');
+            });
+            
+            backButtons.random.addEventListener('click', (e) => {
+                e.preventDefault();
+                switchPage('home');
+            });
+            
+            backButtons.weapon.addEventListener('click', (e) => {
+                e.preventDefault();
+                switchPage('home');
+            });
+            
+            backButtons.dpi.addEventListener('click', (e) => {
+                e.preventDefault();
+                switchPage('home');
+            });
+
+            backButtons.optimization.addEventListener('click', (e) => {
+                e.preventDefault();
+                switchPage('home');
+            });
+
+            backButtons.info.addEventListener('click', (e) => {
+                e.preventDefault();
+                switchPage('home');
+            });
+        }
+        
+
+        // ===== INFO DO DISPOSITIVO =====
+        function setupInfoPage() {
+            const ua = navigator.userAgent || "";
+            const androidMatch = ua.match(/Android\s+([0-9.]+)/i);
+
+            let marca = "Android";
+            let modelo = "Dispositivo";
+            if (/Samsung/i.test(ua)) marca = "Samsung";
+            else if (/Xiaomi|Redmi|POCO/i.test(ua)) marca = "Xiaomi";
+            else if (/Motorola|moto/i.test(ua)) marca = "Motorola";
+            else if (/Huawei/i.test(ua)) marca = "Huawei";
+            else if (/OPPO/i.test(ua)) marca = "OPPO";
+            else if (/vivo/i.test(ua)) marca = "vivo";
+            else if (/OnePlus/i.test(ua)) marca = "OnePlus";
+            else if (/Realme/i.test(ua)) marca = "Realme";
+
+            const modelMatch = ua.match(/;\s*([^;)]+?)\s+Build\//i);
+            if (modelMatch) modelo = modelMatch[1].trim();
+
+            document.getElementById("infoMarca").textContent = marca;
+            document.getElementById("infoModelo").textContent = modelo;
+            document.getElementById("infoAndroid").textContent =
+                androidMatch ? "Android " + androidMatch[1] : "Android";
+
+            document.getElementById("infoRam").textContent =
+                navigator.deviceMemory ? navigator.deviceMemory + " GB (estimada)" : "Não disponível";
+
+            // FPS disponível no navegador.
+            let frames = 0;
+            let last = performance.now();
+            function measureFPS(now) {
+                frames++;
+                if (now - last >= 1000) {
+                    const fps = Math.round(frames * 1000 / (now - last));
+                    const el = document.getElementById("infoFps");
+                    if (el) el.textContent = fps + " FPS";
+                    frames = 0;
+                    last = now;
+                }
+                requestAnimationFrame(measureFPS);
+            }
+            requestAnimationFrame(measureFPS);
+
+            // Tempo em tempo real = quanto falta para a Key expirar.
+            function updateInfoTime() {
+                const el = document.getElementById("infoTempo");
+                if (!el) return;
+
+                if (activeKeyData && activeKeyData.expires) {
+                    el.textContent = formatRemaining(activeKeyData.expires - Date.now());
+                    el.style.color = (activeKeyData.expires - Date.now()) <= 0 ? "var(--danger)" : "var(--success)";
+                } else if (activeKeyData && activeKeyData.duration === "permanent") {
+                    el.textContent = "Ilimitado";
+                    el.style.color = "var(--success)";
+                } else {
+                    el.textContent = "Key não ativada";
+                }
+
+                const planoEl = document.getElementById("infoPlano");
+                const ativacaoEl = document.getElementById("infoAtivacao");
+                if (activeKeyData) {
+                    planoEl.textContent = activeKeyData.duration === "permanent"
+                        ? "Permanente"
+                        : (activeKeyData.duration ? activeKeyData.duration + (String(activeKeyData.duration).endsWith("h") ? "" : " dias") : "Não informado");
+                    ativacaoEl.textContent = activeKeyData.activatedAt
+                        ? new Date(activeKeyData.activatedAt).toLocaleString("pt-BR")
+                        : "Não registrada";
+                }
+            }
+
+            updateInfoTime();
+            clearInterval(window.mxInfoRemainingTimer);
+            window.mxInfoRemainingTimer = setInterval(updateInfoTime, 1000);
+
+            // Fallback para dados antigos salvos no navegador, sem substituir os dados reais da Key.
+            if (!activeKeyData) {
+                const plano = localStorage.getItem("planoAtual") || localStorage.getItem("plan") || localStorage.getItem("plano");
+                const ativacao = localStorage.getItem("dataAtivacao") || localStorage.getItem("activationDate") || localStorage.getItem("activatedAt");
+                if (plano) document.getElementById("infoPlano").textContent = plano;
+                if (ativacao) {
+                    const d = new Date(ativacao);
+                    document.getElementById("infoAtivacao").textContent =
+                        isNaN(d.getTime()) ? ativacao : d.toLocaleString("pt-BR");
+                }
+            }
+
+            const backToKey = document.getElementById("backToKeyFromInfo");
+            if (backToKey && !backToKey.dataset.bound) {
+                backToKey.dataset.bound = "1";
+                backToKey.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    Object.values(pages).forEach(p => p.classList.remove("active"));
+                    keyPage.classList.add("active");
+                    mainHeader.style.display = "none";
+                    siteFooter.style.display = "none";
+                    siteWatermark.style.display = "none";
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                });
+            }
+        }
+
+        function setupOptimization() {
+            const checks = document.querySelectorAll('.optimization-check');
+            const button = document.getElementById('activateOptimization');
+            const progress = document.getElementById('optimizationProgress');
+            const bar = document.getElementById('optimizationProgressBar');
+            const status = document.getElementById('optimizationStatus');
+
+            button.addEventListener('click', () => {
+                const selected = [...checks].filter(c => c.checked);
+                if (!selected.length) {
+                    status.style.color = 'var(--danger)';
+                    status.textContent = '⚠️ Selecione uma função';
+                    return;
+                }
+                button.disabled = true;
+                button.style.opacity = '.7';
+                status.style.color = 'var(--secondary)';
+                status.textContent = '⏳ Preparando recomendações...';
+                progress.classList.add('active');
+                bar.style.width = '0%';
+                let value = 0;
+                const timer = setInterval(() => {
+                    value += Math.floor(Math.random() * 9) + 5;
+                    if (value >= 100) {
+                        value = 100;
+                        clearInterval(timer);
+                        status.style.color = 'var(--success)';
+                        status.textContent = '✓ Rotina de otimização concluída';
+                        setTimeout(() => {
+                            selected.forEach(c => c.checked = false);
+                            progress.classList.remove('active');
+                            bar.style.width = '0%';
+                            status.textContent = '';
+                            button.disabled = false;
+                            button.style.opacity = '1';
+                            switchPage('home');
+                        }, 1200);
+                    }
+                    bar.style.width = value + '%';
+                }, 120);
+            });
+        }
+
+        function setupFilterButtons() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all filter buttons
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+                    
+                    // Get filter value
+                    currentFilter = btn.dataset.filter;
+                    
+                    // Apply filter to pro players
+                    filterProPlayers(currentFilter);
+                });
+            });
+        }
+        
+        function switchPage(pageName) {
+            // Hide all pages
+            Object.values(pages).forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Remove active class from all nav buttons
+            Object.values(navButtons).forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected page
+            pages[pageName].classList.add('active');
+            
+            // Activate corresponding nav button
+            navButtons[pageName].classList.add('active');
+            
+            // Update current page
+            currentPage = pageName;
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+            
+            // Reset filter to "todos" when entering pro page
+            if (pageName === 'pro') {
+                currentFilter = "todos";
+                const filterButtons = document.querySelectorAll('.filter-btn');
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    if (btn.dataset.filter === 'todos') {
+                        btn.classList.add('active');
+                    }
+                });
+                filterProPlayers('todos');
+            }
+        }
+        
+        function initProPage() {
+            // Initial render of pro players
+            filterProPlayers('todos');
+        }
+        
+        function filterProPlayers(filter) {
+            const proSelectionGrid = document.getElementById('proSelectionGrid');
+            proSelectionGrid.innerHTML = '';
+            
+            // Filter players based on category
+            let filteredPlayers = {};
+            
+            if (filter === 'todos') {
+                filteredPlayers = proPlayers2026;
+            } else {
+                Object.entries(proPlayers2026).forEach(([playerName, data]) => {
+                    if (data.categoria === filter) {
+                        filteredPlayers[playerName] = data;
+                    }
+                });
+            }
+            
+            // Create player selection cards
+            Object.entries(filteredPlayers).forEach(([playerName, data]) => {
+                const playerCard = document.createElement('div');
+                playerCard.className = 'selection-card';
+                playerCard.dataset.player = playerName;
+                
+                // Add tag for categoria
+                const tagClass = data.categoria === 'capa' ? 'tag-capa' : 'tag-controle';
+                const tagText = data.categoria === 'capa' ? '+ CAPA' : '+ CONTROLE';
+                
+                playerCard.innerHTML = `
+                    <div class="player-tag ${tagClass}">${tagText}</div>
+                    <i class="fas fa-user-ninja selection-icon"></i>
+                    <div class="selection-name">${playerName}</div>
+                    <div class="selection-desc">${data.estilo}</div>
+                `;
+                
+                playerCard.addEventListener('click', () => {
+                    // Remove active class from all cards
+                    document.querySelectorAll('#proSelectionGrid .selection-card').forEach(card => {
+                        card.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked card
+                    playerCard.classList.add('active');
+                    
+                    // Display player settings
+                    displayProSettings(playerName);
+                });
+                
+                proSelectionGrid.appendChild(playerCard);
+            });
+            
+            // Activate first player by default
+            if (proSelectionGrid.firstChild) {
+                proSelectionGrid.firstChild.classList.add('active');
+                displayProSettings(Object.keys(filteredPlayers)[0]);
+            }
+        }
+        
+        function displayProSettings(playerName) {
+            const settings = proPlayers2026[playerName];
+            currentSettings = {...settings, player: playerName};
+            currentType = "pro";
+            
+            const displayContainer = document.getElementById('proSettingsDisplay');
+            
+            // Create settings display
+            const settingsContent = document.createElement('div');
+            settingsContent.innerHTML = `
+                <div class="settings-grid">
+                    <div class="setting-item" style="grid-column: 1 / -1;">
+                        <div class="setting-label">Jogador Profissional</div>
+                        <div class="setting-value" style="color: var(--gold);">${playerName}</div>
+                        <div style="color: var(--secondary); margin-top: 10px; font-size: 1.1rem;">${settings.descricao}</div>
+                        <div style="color: rgba(240, 248, 255, 0.7); margin-top: 5px;">
+                            <span style="color: ${settings.categoria === 'capa' ? 'var(--capa)' : 'var(--controle)'}; font-weight: bold;">
+                                ${settings.categoria === 'capa' ? '+ CAPA (Agresivo)' : '+ CONTROLE (Precisão)'}
+                            </span> | 
+                            Estilo: ${settings.estilo} | DPI: ${settings.dpi}
+                        </div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Geral</div>
+                        <div class="setting-value">${settings.geral}<span class="setting-unit">%</span></div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Mira (Iron Sight)</div>
+                        <div class="setting-value">${settings.mira}<span class="setting-unit">%</span></div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Mira Vermelha</div>
+                        <div class="setting-value">${settings.reddot}<span class="setting-unit">%</span></div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Mira 2x</div>
+                        <div class="setting-value">${settings.x2}<span class="setting-unit">%</span></div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Mira 4x</div>
+                        <div class="setting-value">${settings.x4}<span class="setting-unit">%</span></div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Mira Sniper</div>
+                        <div class="setting-value">${settings.miraSniper}<span class="setting-unit">%</span></div>
+                    </div>
+                </div>
+                
+                <div class="settings-actions">
+                    <button class="card-btn copy-btn" id="copyProSettings">
+                        <i class="far fa-copy"></i> Copiar Configurações
+                    </button>
+                </div>
+            `;
+            
+            // Clear and update display
+            displayContainer.innerHTML = '';
+            displayContainer.appendChild(settingsContent);
+            
+            // Add copy functionality
+            document.getElementById('copyProSettings').addEventListener('click', copySettingsToClipboard);
+        }
+        
+        function initTwoThreePage() {
+            const twoThreeSelectionGrid = document.getElementById('twoThreeSelectionGrid');
+            twoThreeSelectionGrid.innerHTML = '';
+            
+            // Create selection cards
+            Object.entries(twoThreeSettings2026).forEach(([settingName, data]) => {
+                const settingCard = document.createElement('div');
+                settingCard.className = 'selection-card';
+                settingCard.dataset.setting = settingName;
+                
+                // Add tag for categoria
+                const tagClass = data.categoria === 'capa' ? 'tag-capa' : 'tag-controle';
+                const tagText = data.categoria === 'capa' ? '+ CAPA' : '+ CONTROLE';
+                
+                settingCard.innerHTML = `
+                    <div class="player-tag ${tagClass}">${tagText}</div>
+                    <i class="fas fa-hand-peace selection-icon"></i>
+                    <div class="selection-name">${settingName}</div>
+                    <div class="selection-desc">${data.recomendacao}</div>
+                `;
+                
+                settingCard.addEventListener('click', () => {
+                    // Remove active class from all cards
+                    document.querySelectorAll('#twoThreeSelectionGrid .selection-card').forEach(card => {
+                        card.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked card
+                    settingCard.classList.add('active');
+                    
+                    // Display settings
+                    displayTwoThreeSettings(settingName);
+                });
+                
+                twoThreeSelectionGrid.appendChild(settingCard);
+            });
+            
+            // Activate first setting by default
+            if (twoThreeSelectionGrid.firstChild) {
+                twoThreeSelectionGrid.firstChild.classList.add('active');
+                displayTwoThreeSettings(Object.keys(twoThreeSettings2026)[0]);
+            }
+        }
+        
+        function displayTwoThreeSettings(settingName) {
+            const settings = twoThreeSettings2026[settingName];
+            currentSettings = {...settings, setting: settingName};
+            currentType = "twoThree";
+            
+            const displayContainer = document.getElementById('twoThreeSettingsDisplay');
+            
+            // Create settings display
+            const settingsContent = document.createElement('div');
+            settingsContent.innerHTML = `
+                <div class="settings-grid">
+                    <div class="setting-item" style="grid-column: 1 / -1;">
+                        <div class="setting-label">Configuração para 2-3 Dedos</div>
+                        <div class="setting-value" style="color: var(--green);">${settingName}</div>
+                        <div style="color: var(--secondary); margin-top: 10px; font-size: 1.1rem;">${settings.descricao}</div>
+                        <div style="color: rgba(240, 248, 255, 0.7); margin-top: 5px;">
+                            <span style="color: ${settings.categoria === 'capa' ? 'var(--capa)' : 'var(--controle)'}; font-weight: bold;">
+                                ${settings.categoria === 'capa' ? '+ CAPA (Agresivo)' : '+ CONTROLE (Precisão)'}
+                            </span> | 
+                            ${settings.recomendacao} | DPI: ${settings.dpi}
+                        </div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Geral</div>
+                        <div class="setting-value">${settings.geral}<span class="setting-unit">%</span></div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Mira (Iron Sight)</div>
+                        <div class="setting-value">${settings.mira}<span class="setting-unit">%</span></div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Mira Vermelha</div>
+                        <div class="setting-value">${settings.reddot}<span class="setting-unit">%</span></div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Mira 2x</div>
+                        <div class="setting-value">${settings.x2}<span class="setting-unit">%</span></div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Mira 4x</div>
+                        <div class="setting-value">${settings.x4}<span class="setting-unit">%</span></div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Mira Sniper</div>
+                        <div class="setting-value">${settings.miraSniper}<span class="setting-unit">%</span></div>
+                    </div>
+                </div>
+                
+                <div class="settings-actions">
+                    <button class="card-btn copy-btn" id="copyTwoThreeSettings">
+                        <i class="far fa-copy"></i> Copiar Configurações
+                    </button>
+                </div>
+            `;
+            
+            // Clear and update display
+            displayContainer.innerHTML = '';
+            displayContainer.appendChild(settingsContent);
+            
+            // Add copy functionality
+            document.getElementById('copyTwoThreeSettings').addEventListener('click', copySettingsToClipboard);
+        }
+        
+        const HISTORY_KEY = 'mx_sensi_history_v2';
+        const FAVORITES_KEY = 'mx_sensi_favorites_v2';
+
+        function readStore(key) { try { return JSON.parse(localStorage.getItem(key) || '[]'); } catch { return []; } }
+        function writeStore(key, value) { localStorage.setItem(key, JSON.stringify(value)); }
+        function clamp(v, min=0, max=200) { return Math.max(min, Math.min(max, Math.round(v))); }
+
+        function getGeneratorProfile() {
+            const device = document.getElementById('genDevice').value;
+            const fingers = Number(document.getElementById('genFingers').value);
+            const style = document.getElementById('genStyle').value;
+            const weapon = document.getElementById('genWeapon').value;
+            const dpi = Math.max(300, Math.min(1200, Number(document.getElementById('genDpi').value) || 600));
+            const intensity = Number(document.getElementById('genIntensity').value) || 70;
+            return { device, fingers, style, weapon, dpi, intensity };
+        }
+
+        function buildPersonalizedSettings(profile) {
+            const baseByDevice = { entrada:150, intermediario:168, potente:182, gamer:190 };
+            const styleBonus = { controle:-12, equilibrado:0, capa:12, rush:17 };
+            const weaponBonus = { geral:0, smg:7, shotgun:11, ar:2, sniper:-18 };
+            const fingerBonus = {2:-9,3:0,4:7,5:10};
+            const intensityBonus = (profile.intensity - 70) * 0.28;
+
+            // Gera uma variação nova a cada clique, mantendo o resultado coerente com o perfil.
+            const variationRange = Math.max(4, Math.round(5 + (profile.intensity - 30) * 0.12));
+            const randomOffset = () => Math.floor(Math.random() * (variationRange * 2 + 1)) - variationRange;
+
+            const base = baseByDevice[profile.device] + styleBonus[profile.style] + weaponBonus[profile.weapon] + fingerBonus[profile.fingers] + intensityBonus;
+            const dpiFactor = 600 / profile.dpi;
+            const geral = clamp(base * dpiFactor + randomOffset());
+            const mira = clamp(geral - (profile.weapon === 'sniper' ? 18 : 8) + randomOffset());
+            const reddot = clamp(mira - 8 + randomOffset());
+            const x2 = clamp(reddot - 9 + randomOffset());
+            const x4 = clamp(x2 - 10 + randomOffset());
+            const miraSniper = clamp(x4 - (profile.weapon === 'sniper' ? 4 : 14) + randomOffset());
+            return {
+                geral, mira, reddot, x2, x4, miraSniper, dpi: profile.dpi,
+                device: profile.device, fingers: profile.fingers, style: profile.style, weapon: profile.weapon, intensity: profile.intensity,
+                descricao: 'Configuração personalizada pelo perfil escolhido com variação única a cada geração', tipo: 'Sensi Personalizada'
+            };
+        }
+
+        function profileLabels(p) {
+            const d={entrada:'Entrada',intermediario:'Intermediário',potente:'Potente',gamer:'Gamer'};
+            const st={controle:'Controle',equilibrado:'Equilibrado',capa:'Capa',rush:'Rush'};
+            const w={geral:'Geral',smg:'SMG',shotgun:'Escopeta',ar:'AR',sniper:'Sniper'};
+            return { device:d[p.device]||p.device, style:st[p.style]||p.style, weapon:w[p.weapon]||p.weapon };
+        }
+
+        function settingsSignature(s) { return [s.geral,s.mira,s.reddot,s.x2,s.x4,s.miraSniper,s.dpi,s.fingers,s.style,s.weapon].join('|'); }
+
+        function saveHistory(settings) {
+            const list = readStore(HISTORY_KEY).filter(x => x.signature !== settingsSignature(settings));
+            list.unshift({ ...settings, signature: settingsSignature(settings), createdAt: Date.now() });
+            writeStore(HISTORY_KEY, list.slice(0,12));
+            renderHistory();
+        }
+
+        function isFavorite(settings) { return readStore(FAVORITES_KEY).some(x => x.signature === settingsSignature(settings)); }
+        function toggleFavorite(settings) {
+            let list = readStore(FAVORITES_KEY);
+            const sig = settingsSignature(settings);
+            if (list.some(x => x.signature === sig)) list = list.filter(x => x.signature !== sig);
+            else list.unshift({ ...settings, signature:sig, createdAt:Date.now() });
+            writeStore(FAVORITES_KEY, list.slice(0,20));
+            renderFavorites(); renderRandomResult();
+        }
+
+        function renderHistory() {
+            const box=document.getElementById('historyList'); if(!box) return;
+            const list=readStore(HISTORY_KEY);
+            box.innerHTML=list.length?list.map((x,i)=>`<div class="history-item"><div><strong>${x.geral}/${x.reddot}/${x.x2}/${x.x4}</strong><small>${new Date(x.createdAt).toLocaleString('pt-BR')} • DPI ${x.dpi} • ${x.fingers} dedos</small></div><button class="card-btn secondary" style="padding:8px 11px;font-size:.78rem" data-history="${i}">Usar</button></div>`).join(''):'<div class="history-empty">Nenhuma configuração gerada ainda.</div>';
+            box.querySelectorAll('[data-history]').forEach(btn=>btn.onclick=()=>{const x=list[Number(btn.dataset.history)]; currentSettings={...x}; currentType='random'; renderRandomResult(); window.scrollTo({top:0,behavior:'smooth'});});
+        }
+
+        function renderFavorites() {
+            const box=document.getElementById('favoritesList'); if(!box) return;
+            const list=readStore(FAVORITES_KEY);
+            box.innerHTML=list.length?list.map((x,i)=>`<div class="history-item"><div><strong>⭐ ${x.geral}/${x.reddot}/${x.x2}/${x.x4}</strong><small>DPI ${x.dpi} • ${x.fingers} dedos • ${x.style}</small></div><button class="card-btn secondary" style="padding:8px 11px;font-size:.78rem" data-fav="${i}">Usar</button></div>`).join(''):'<div class="history-empty">Nenhuma favorita salva.</div>';
+            box.querySelectorAll('[data-fav]').forEach(btn=>btn.onclick=()=>{const x=list[Number(btn.dataset.fav)]; currentSettings={...x}; currentType='random'; renderRandomResult(); window.scrollTo({top:0,behavior:'smooth'});});
+        }
+
+        function initRandomPage() {
+            document.getElementById('generateRandomBtn').addEventListener('click', generateRandomSettings);
+            document.getElementById('clearGeneratorBtn').addEventListener('click', ()=>{ document.getElementById('randomSettingsDisplay').innerHTML=''; });
+            document.getElementById('genIntensity').addEventListener('input',e=>document.getElementById('genIntensityValue').textContent=e.target.value);
+            document.getElementById('clearHistoryBtn').addEventListener('click',()=>{writeStore(HISTORY_KEY,[]);renderHistory();});
+            document.getElementById('clearFavoritesBtn').addEventListener('click',()=>{writeStore(FAVORITES_KEY,[]);renderFavorites();renderRandomResult();});
+            renderHistory(); renderFavorites();
+        }
+
+        function renderRandomResult() {
+            const settings=currentSettings;
+            const displayContainer=document.getElementById('randomSettingsDisplay');
+            if(!settings || !settings.geral){ displayContainer.innerHTML=''; return; }
+            const p=profileLabels(settings);
+            const favorite=isFavorite(settings);
+            const settingsContent=document.createElement('div');
+            settingsContent.innerHTML=`
+                <div class="settings-grid">
+                    <div class="setting-item" style="grid-column:1/-1;">
+                        <div class="setting-label">Resultado</div><div class="setting-value" style="color:var(--accent);">${settings.tipo||'Sensi Personalizada'}</div>
+                        <div class="result-meta"><span class="result-chip">📱 ${p.device||'Personalizado'}</span><span class="result-chip">👆 ${settings.fingers||'-'} dedos</span><span class="result-chip">🎯 ${p.style||'-'}</span><span class="result-chip">🔫 ${p.weapon||'-'}</span><span class="result-chip">📐 DPI ${settings.dpi||'-'}</span></div>
+                        <div style="color:rgba(240,248,255,.7);">${settings.descricao||'Configuração recomendada.'}</div>
+                    </div>
+                    ${[['Geral',settings.geral],['Mira (Iron Sight)',settings.mira],['Mira Vermelha',settings.reddot],['Mira 2x',settings.x2],['Mira 4x',settings.x4],['Mira Sniper',settings.miraSniper]].map(a=>`<div class="setting-item"><div class="setting-label">${a[0]}</div><div class="setting-value">${a[1]}<span class="setting-unit">%</span></div></div>`).join('')}
+                </div>
+                <div class="settings-actions">
+                    <button class="card-btn copy-btn" id="copyRandomSettings"><i class="far fa-copy"></i> Copiar</button>
+                    <button class="card-btn" id="generateNewRandom"><i class="fas fa-redo"></i> Gerar Novamente</button>
+                    <button class="card-btn secondary ${favorite?'favorite-active':''}" id="favoriteRandom"><i class="${favorite?'fas':'far'} fa-star"></i> ${favorite?'Favoritada':'Favoritar'}</button>
+                </div>`;
+            displayContainer.innerHTML=''; displayContainer.appendChild(settingsContent);
+            document.getElementById('copyRandomSettings').onclick=copySettingsToClipboard;
+            document.getElementById('generateNewRandom').onclick=generateRandomSettings;
+            document.getElementById('favoriteRandom').onclick=()=>toggleFavorite(settings);
+        }
+
+        function generateRandomSettings() {
+            const profile=getGeneratorProfile();
+            currentSettings=buildPersonalizedSettings(profile);
+            currentType='random';
+            saveHistory(currentSettings);
+            renderRandomResult();
+        }
+
+        function initWeaponPage() {
+            const weaponSelectionGrid = document.getElementById('weaponSelectionGrid');
+            weaponSelectionGrid.innerHTML = '';
+            
+            // Create weapon selection cards
+            Object.entries(weapons2026).forEach(([weaponName, data]) => {
+                const weaponCard = document.createElement('div');
+                weaponCard.className = 'selection-card';
+                weaponCard.dataset.weapon = weaponName;
+                
+                weaponCard.innerHTML = `
+                    <i class="fas fa-crosshairs selection-icon"></i>
+                    <div class="selection-name">${weaponName}</div>
+                    <div class="selection-desc">${data.recomendacao}</div>
+                `;
+                
+                weaponCard.addEventListener('click', () => {
+                    // Remove active class from all cards
+                    document.querySelectorAll('#weaponSelectionGrid .selection-card').forEach(card => {
+                        card.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked card
+                    weaponCard.classList.add('active');
+                    
+                    // Display weapon settings
+                    displayWeaponSettings(weaponName);
+                });
+                
+                weaponSelectionGrid.appendChild(weaponCard);
+            });
+            
+            // Activate first weapon by default
+            if (weaponSelectionGrid.firstChild) {
+                weaponSelectionGrid.firstChild.classList.add('active');
+                displayWeaponSettings(Object.keys(weapons2026)[0]);
+            }
+        }
+        
+        function displayWeaponSettings(weaponName) {
+            const settings = weapons2026[weaponName];
+            currentSettings = {...settings, weapon: weaponName};
+            currentType = "weapon";
+            
+            const displayContainer = document.getElementById('weaponSettingsDisplay');
+            
+            // Create settings display
+            const settingsContent = document.createElement('div');
+            settingsContent.innerHTML = `
+                <div class="settings-grid">
+                    <div class="setting-item" style="grid-column: 1 / -1;">
+                        <div class="setting-label">Tipo de Arma</div>
+                        <div class="setting-value" style="color: var(--secondary);">${weaponName}</div>
+                        <div style="color: var(--primary); margin-top: 10px; font-size: 1.1rem;">${settings.descricao}</div>
+                        <div style="color: rgba(240, 248, 255, 0.7); margin-top: 5px;">${settings.recomendacao}</div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Geral</div>
+                        <div class="setting-value">${settings.geral}<span class="setting-unit">%</span></div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Mira (Iron Sight)</div>
+                        <div class="setting-value">${settings.mira}<span class="setting-unit">%</span></div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Mira Vermelha</div>
+                        <div class="setting-value">${settings.reddot}<span class="setting-unit">%</span></div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Mira 2x</div>
+                        <div class="setting-value">${settings.x2}<span class="setting-unit">%</span></div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Mira 4x</div>
+                        <div class="setting-value">${settings.x4}<span class="setting-unit">%</span></div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Mira Sniper</div>
+                        <div class="setting-value">${settings.miraSniper}<span class="setting-unit">%</span></div>
+                    </div>
+                </div>
+                
+                <div class="settings-actions">
+                    <button class="card-btn copy-btn" id="copyWeaponSettings">
+                        <i class="far fa-copy"></i> Copiar Configurações
+                    </button>
+                </div>
+            `;
+            
+            // Clear and update display
+            displayContainer.innerHTML = '';
+            displayContainer.appendChild(settingsContent);
+            
+            // Add copy functionality
+            document.getElementById('copyWeaponSettings').addEventListener('click', copySettingsToClipboard);
+        }
+        
+        function initDpiPage() {
+            const dpiSelectionGrid = document.getElementById('dpiSelectionGrid');
+            dpiSelectionGrid.innerHTML = '';
+            
+            // Create DPI selection cards
+            Object.entries(dpiSettings2026).forEach(([dpiName, data]) => {
+                const dpiCard = document.createElement('div');
+                dpiCard.className = 'selection-card';
+                dpiCard.dataset.dpi = dpiName;
+                
+                dpiCard.innerHTML = `
+                    <i class="fas fa-sliders-h selection-icon"></i>
+                    <div class="selection-name">${dpiName}</div>
+                    <div class="selection-desc">${data.recomendacao}</div>
+                `;
+                
+                dpiCard.addEventListener('click', () => {
+                    // Remove active class from all cards
+                    document.querySelectorAll('#dpiSelectionGrid .selection-card').forEach(card => {
+                        card.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked card
+                    dpiCard.classList.add('active');
+                    
+                    // Display DPI settings
+                    displayDpiSettings(dpiName);
+                });
+                
+                dpiSelectionGrid.appendChild(dpiCard);
+            });
+            
+            // Activate first DPI by default
+            if (dpiSelectionGrid.firstChild) {
+                dpiSelectionGrid.firstChild.classList.add('active');
+                displayDpiSettings(Object.keys(dpiSettings2026)[0]);
+            }
+        }
+        
+        function displayDpiSettings(dpiName) {
+            const settings = dpiSettings2026[dpiName];
+            currentSettings = {...settings, dpiType: dpiName};
+            currentType = "dpi";
+            
+            const displayContainer = document.getElementById('dpiSettingsDisplay');
+            
+            // Create settings display
+            const settingsContent = document.createElement('div');
+            settingsContent.innerHTML = `
+                <div class="settings-grid">
+                    <div class="setting-item" style="grid-column: 1 / -1;">
+                        <div class="setting-label">Configuração de DPI</div>
+                        <div class="setting-value" style="color: var(--secondary);">${dpiName}</div>
+                        <div style="color: var(--primary); margin-top: 10px; font-size: 1.1rem;">${settings.descricao}</div>
+                        <div style="color: rgba(240, 248, 255, 0.7); margin-top: 5px;">${settings.recomendacao}</div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">DPI Recomendado</div>
+                        <div class="setting-value">${settings.dpi}<span class="setting-unit">DPI</span></div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Sensibilidade Geral</div>
+                        <div class="setting-value">${settings.sensibilidadeGeral}<span class="setting-unit">%</span></div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Mira (Iron Sight)</div>
+                        <div class="setting-value">${Math.floor(settings.sensibilidadeGeral * 0.9)}<span class="setting-unit">%</span></div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Mira Vermelha</div>
+                        <div class="setting-value">${Math.floor(settings.sensibilidadeGeral * 0.85)}<span class="setting-unit">%</span></div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Mira 2x</div>
+                        <div class="setting-value">${Math.floor(settings.sensibilidadeGeral * 0.8)}<span class="setting-unit">%</span></div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-label">Mira 4x</div>
+                        <div class="setting-value">${Math.floor(settings.sensibilidadeGeral * 0.75)}<span class="setting-unit">%</span></div>
+                    </div>
+                </div>
+                
+                <div class="settings-actions">
+                    <button class="card-btn copy-btn" id="copyDpiSettings">
+                        <i class="far fa-copy"></i> Copiar Configurações
+                    </button>
+                </div>
+            `;
+            
+            // Clear and update display
+            displayContainer.innerHTML = '';
+            displayContainer.appendChild(settingsContent);
+            
+            // Add copy functionality
+            document.getElementById('copyDpiSettings').addEventListener('click', copySettingsToClipboard);
+        }
+        
+        function copySettingsToClipboard() {
+            let textToCopy = "⚡ Configurações Free Fire 2026 - MestreXit.ia VIP ⚡\n";
+            textToCopy += "===========================================\n\n";
+            
+            if (currentSettings.player) {
+                textToCopy += `👑 Jogador: ${currentSettings.player}\n`;
+                textToCopy += `📝 Descrição: ${currentSettings.descricao}\n`;
+                textToCopy += `🎮 Estilo: ${currentSettings.estilo}\n`;
+                textToCopy += `🎯 Categoria: ${currentSettings.categoria === 'capa' ? '+ CAPA (Agresivo)' : '+ CONTROLE (Precisão)'}\n`;
+                if (currentSettings.dpi) textToCopy += `📱 DPI: ${currentSettings.dpi}\n`;
+            }
+            
+            if (currentSettings.setting && currentType === "twoThree") {
+                textToCopy += `👆 Configuração: ${currentSettings.setting}\n`;
+                textToCopy += `📝 Descrição: ${currentSettings.descricao}\n`;
+                textToCopy += `🎯 Categoria: ${currentSettings.categoria === 'capa' ? '+ CAPA (Agresivo)' : '+ CONTROLE (Precisão)'}\n`;
+                textToCopy += `💡 Recomendação: ${currentSettings.recomendacao}\n`;
+                if (currentSettings.dpi) textToCopy += `📱 DPI: ${currentSettings.dpi}\n`;
+            }
+            
+            if (currentSettings.weapon) {
+                textToCopy += `🔫 Arma: ${currentSettings.weapon}\n`;
+                textToCopy += `📝 Descrição: ${currentSettings.descricao}\n`;
+                textToCopy += `💡 Recomendação: ${currentSettings.recomendacao}\n`;
+            }
+            
+            if (currentSettings.dpiType) {
+                textToCopy += `📱 Configuração DPI: ${currentSettings.dpiType}\n`;
+                textToCopy += `📝 Descrição: ${currentSettings.descricao}\n`;
+                textToCopy += `💡 Recomendação: ${currentSettings.recomendacao}\n`;
+            }
+            
+            if (currentSettings.tipo && !currentSettings.player && !currentSettings.setting && !currentSettings.weapon && !currentSettings.dpiType) {
+                textToCopy += `🎯 ${currentSettings.tipo}\n`;
+                textToCopy += `📝 ${currentSettings.descricao}\n`;
+            }
+            
+            textToCopy += "\n";
+            textToCopy += "⚙️ CONFIGURAÇÕES DE SENSIBILIDADE (até 200%)\n";
+            textToCopy += "-------------------------------------------\n";
+            
+            // Add settings
+            if (currentSettings.geral) {
+                textToCopy += `• Geral: ${currentSettings.geral}%\n`;
+            }
+            
+            if (currentSettings.mira) {
+                textToCopy += `• Mira (Iron Sight): ${currentSettings.mira}%\n`;
+            }
+            
+            if (currentSettings.reddot) {
+                textToCopy += `• Mira Vermelha / Holográfico: ${currentSettings.reddot}%\n`;
+            }
+            
+            if (currentSettings.x2) {
+                textToCopy += `• Mira 2x: ${currentSettings.x2}%\n`;
+            }
+            
+            if (currentSettings.x4) {
+                textToCopy += `• Mira 4x: ${currentSettings.x4}%\n`;
+            }
+            
+            if (currentSettings.miraSniper) {
+                textToCopy += `• Mira Sniper: ${currentSettings.miraSniper}%\n`;
+            }
+            
+            if (currentSettings.dpi && !currentSettings.player && !currentSettings.setting) {
+                textToCopy += `• DPI Recomendado: ${currentSettings.dpi}\n`;
+            }
+            
+            if (currentSettings.sensibilidadeGeral && currentSettings.dpiType) {
+                textToCopy += `• Sensibilidade Geral: ${currentSettings.sensibilidadeGeral}%\n`;
+            }
+            
+            textToCopy += "\n";
+            textToCopy += "✨ Gerado por MestreXit.ia VIP - A Nova Era do Free Fire 2026 ✨\n";
+            textToCopy += "👨‍💻 Desenvolvido por MestreXit";
+            
+            // Copy to clipboard
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                showNotification("Configurações copiadas para a área de transferência! ✅");
+            }).catch(err => {
+                showNotification("Erro ao copiar as configurações. ❌", true);
+            });
+        }
+        
+        function showNotification(message, isError = false) {
+            notification.textContent = message;
+            notification.classList.toggle("error", isError);
+            notification.style.display = "block";
+            
+            setTimeout(() => {
+                notification.style.display = "none";
+            }, 4000);
+        }
+        
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+
+<!-- MestreXit.ia / Gerador: painel e saída -->
+<div id="mxGeneratorOverlay" class="mx-overlay" aria-hidden="true">
+  <div class="mx-modal">
+    <button id="mxClosePanel" class="mx-close" aria-label="Fechar">×</button>
+    <div class="mx-modal-title">MestreXit.ia</div>
+    <div class="mx-modal-subtitle">Nova Era do Free Fire</div>
+    <div class="mx-info-grid">
+      <div><b>Marca</b><span id="mxMarca">Detectando...</span></div>
+      <div><b>Modelo</b><span id="mxModelo">Detectando...</span></div>
+      <div><b>RAM</b><span id="mxRam">Indisponível</span></div>
+      <div><b>Android</b><span id="mxAndroid">Detectando...</span></div>
+      <div><b>DPI atual</b><span id="mxDpi">Indisponível</span></div>
+      <div><b>FPS disponível</b><span id="mxFps">60 FPS</span></div>
+      <div><b>Contador</b><span id="mxTimer">00:00:00</span></div>
+      <div><b>Plano atual</b><span id="mxPlano">Gerador</span></div>
+      <div><b>Data de ativação</b><span id="mxAtivacao">--/--/----</span></div>
+    </div>
+    <button id="mxSairGerador" class="mx-exit">Sair do gerador → Keys</button>
+  </div>
+</div>
+<style>
+.mx-overlay{position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,.78);display:none;align-items:center;justify-content:center;padding:18px}
+.mx-overlay.open{display:flex}
+.mx-modal{position:relative;width:min(560px,100%);max-height:90vh;overflow:auto;border-radius:20px;padding:25px;background:#10131a;border:1px solid rgba(255,140,0,.35);box-shadow:0 20px 70px rgba(0,0,0,.6)}
+.mx-close{position:absolute;right:12px;top:8px;border:0;background:transparent;color:#fff;font-size:34px;line-height:1;cursor:pointer}
+.mx-modal-title{font-size:1.55rem;font-weight:800;color:#ff9d00}
+.mx-modal-subtitle{margin-top:3px;color:#aeb6c2;margin-bottom:20px}
+.mx-info-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.mx-info-grid>div{padding:12px;border-radius:12px;background:rgba(255,255,255,.05)}
+.mx-info-grid b{display:block;font-size:.78rem;color:#9da6b3;margin-bottom:5px}
+.mx-info-grid span{color:#fff;font-weight:700;word-break:break-word}
+.mx-exit{width:100%;margin-top:18px;padding:14px;border:0;border-radius:12px;background:#ff8c00;color:#111;font-weight:800;font-size:1rem;cursor:pointer}
+@media(max-width:500px){.mx-info-grid{grid-template-columns:1fr}}
+#mxBrand{cursor:pointer}
+</style>
+<script>
+(function(){
+  const overlay=document.getElementById('mxGeneratorOverlay');
+  const brand=document.getElementById('mxBrand');
+  const close=document.getElementById('mxClosePanel');
+  const exit=document.getElementById('mxSairGerador');
+  let timerStart=Date.now();
+  let timerId=null;
+
+  function openPanel(){
+    if(!overlay)return;
+    overlay.classList.add('open');
+    overlay.setAttribute('aria-hidden','false');
+    timerStart=Number(localStorage.getItem('mx_generator_start')||Date.now());
+    localStorage.setItem('mx_generator_start',timerStart);
+    updateInfo();
+    if(!timerId) timerId=setInterval(updateInfo,1000);
+  }
+  function closePanel(){
+    if(!overlay)return;
+    overlay.classList.remove('open');
+    overlay.setAttribute('aria-hidden','true');
+  }
+  function updateInfo(){
+    const ua=navigator.userAgent||'';
+    const android=(ua.match(/Android\s([0-9.]+)/i)||[])[1]||'Não identificado';
+    let marca='Não identificado', modelo='Não identificado';
+    if(/Samsung/i.test(ua)) marca='Samsung';
+    else if(/Motorola|moto/i.test(ua)) marca='Motorola';
+    else if(/Xiaomi|Redmi|POCO/i.test(ua)) marca=/Redmi/i.test(ua)?'Redmi':(/POCO/i.test(ua)?'POCO':'Xiaomi');
+    else if(/iPhone|iPad/i.test(ua)) marca='Apple';
+    const modelMatch=ua.match(/;\s*([^;)]+?)\s+Build\//i);
+    if(modelMatch) modelo=modelMatch[1].trim();
+    const ram=(navigator.deviceMemory?navigator.deviceMemory+' GB':'Indisponível');
+    const dpi=localStorage.getItem('mx_dpi_atual')||'Indisponível';
+    let fps='60 FPS';
+    if(navigator.hardwareConcurrency && navigator.hardwareConcurrency>=8) fps='60–120 FPS';
+    document.getElementById('mxMarca').textContent=marca;
+    document.getElementById('mxModelo').textContent=modelo;
+    document.getElementById('mxRam').textContent=ram;
+    document.getElementById('mxAndroid').textContent=android;
+    document.getElementById('mxDpi').textContent=dpi;
+    document.getElementById('mxFps').textContent=fps;
+    const elapsed=Math.max(0,Date.now()-timerStart);
+    const s=Math.floor(elapsed/1000), h=Math.floor(s/3600), mi=Math.floor((s%3600)/60), se=s%60;
+    document.getElementById('mxTimer').textContent=[h,mi,se].map(v=>String(v).padStart(2,'0')).join(':');
+    document.getElementById('mxAtivacao').textContent=new Date(timerStart).toLocaleDateString('pt-BR');
+  }
+  if(brand) brand.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();openPanel();});
+  if(close) close.addEventListener('click',closePanel);
+  if(overlay) overlay.addEventListener('click',e=>{if(e.target===overlay)closePanel();});
+  if(exit) exit.addEventListener('click',function(){
+    closePanel();
+    // Volta para a tela de Keys. Se o projeto tiver uma página/âncora específica,
+    // o primeiro alvo abaixo será usado.
+    const keys=document.getElementById('keysPage')||document.getElementById('keyPage')||document.querySelector('[data-page="keys"]');
+    if(keys){
+      document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+      keys.classList.add('active');
+      keys.scrollIntoView({behavior:'smooth',block:'start'});
+    }else{
+      const home=document.querySelector('.page#homePage');
+      if(home){
+        document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+        home.classList.add('active');
+        window.scrollTo({top:0,behavior:'smooth'});
+      }
+    }
+  });
+})();
+</script>
+
+
+<!-- ================= MESTREXIT LAB 2.0 ================= -->
+<style>
+#mxLabPage{max-width:1300px;margin:0 auto;padding:28px 20px 60px}
+.mxlab-head{display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap;margin-bottom:22px}
+.mxlab-title{font-size:clamp(1.8rem,4vw,2.7rem);font-weight:900;margin:0}.mxlab-title span{color:#ff8c00}.mxlab-sub{color:rgba(240,248,255,.75);margin:7px 0 0}
+.mxlab-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:18px 0 24px}
+.mxlab-card{background:linear-gradient(145deg,rgba(255,140,0,.12),rgba(255,255,255,.035));border:1px solid rgba(255,140,0,.22);border-radius:18px;padding:18px;box-shadow:0 12px 30px rgba(0,0,0,.16)}
+.mxlab-card h3{margin:0 0 8px}.mxlab-card p{color:rgba(240,248,255,.72);font-size:.92rem;line-height:1.45}.mxlab-icon{font-size:1.6rem;color:#ff8c00;margin-bottom:8px}
+.mxlab-form{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}.mxlab-field label{display:block;font-weight:800;margin-bottom:7px}.mxlab-field select,.mxlab-field input{width:100%;padding:13px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:#111722;color:#fff;outline:none}.mxlab-range{display:flex;align-items:center;gap:10px}.mxlab-range input{padding:0}.mxlab-range b{min-width:48px;text-align:center;color:#ff8c00}
+.mxlab-actions{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.mxlab-btn{border:0;border-radius:12px;padding:13px 17px;font-weight:900;cursor:pointer;background:#ff8c00;color:#111}.mxlab-btn.alt{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.12)}
+.mxlab-result{margin-top:20px;display:none}.mxlab-result.show{display:block}.mxlab-result-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.mxlab-table{width:100%;border-collapse:collapse;margin-top:12px;overflow:hidden;border-radius:14px}.mxlab-table th,.mxlab-table td{padding:11px;border-bottom:1px solid rgba(255,255,255,.08);text-align:center}.mxlab-table th{color:#ffb45c;background:rgba(255,140,0,.08)}.mxlab-pill{display:inline-block;padding:5px 9px;border-radius:999px;background:rgba(255,140,0,.12);color:#ffb45c;font-size:.78rem;font-weight:800}
+.mxdiag{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin-top:12px}.mxdiag button{padding:13px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#fff;cursor:pointer;text-align:left}.mxdiag button.active{border-color:#ff8c00;background:rgba(255,140,0,.14)}
+.mxlab-note{font-size:.82rem;color:rgba(255,255,255,.55);margin-top:12px}.mxlab-score{font-size:2.3rem;font-weight:950;color:#ff8c00}.mxlab-compare{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:650px){.mxlab-compare{grid-template-columns:1fr}}
+</style>
+<script>
+(function(){
+  const page=document.createElement('div'); page.className='page'; page.id='mxLabPage';
+  page.innerHTML=`
+    <a href="#" class="back-home" id="mxLabBack"><i class="fas fa-arrow-left"></i> Voltar para o Início</a>
+    <div class="mxlab-head"><div><h2 class="mxlab-title"><i class="fas fa-wand-magic-sparkles"></i> Mestre<span>Xit</span> Sensi Lab</h2><p class="mxlab-sub">Novo gerador inteligente: aparelho + estilo + problema de mira.</p></div><span class="mxlab-pill">MESTREXIT 2026</span></div>
+    <div class="mxlab-grid">
+      <div class="mxlab-card"><div class="mxlab-icon">📱</div><h3>Gerador por aparelho</h3><p>Adapta a configuração ao tipo de celular e ao desempenho informado.</p></div>
+      <div class="mxlab-card"><div class="mxlab-icon">🎯</div><h3>Modo de mira</h3><p>Escolha Full Capa, Rush, Precisão, Controle, One Tap ou Equilibrado.</p></div>
+      <div class="mxlab-card"><div class="mxlab-icon">🧠</div><h3>Diagnóstico</h3><p>Informe o problema da sua mira e receba uma correção automática.</p></div>
+      <div class="mxlab-card"><div class="mxlab-icon">📊</div><h3>Comparador</h3><p>Compare sua sensi atual com a configuração criada pelo MestreXit.</p></div>
+    </div>
+    <div class="settings-container">
+      <h2 class="settings-title"><i class="fas fa-sliders"></i> Gerador MestreXit</h2>
+      <div class="mxlab-form">
+        <div class="mxlab-field"><label>📱 Aparelho</label><select id="mxDevice"><option>Android básico</option><option>Samsung</option><option>Motorola</option><option>Xiaomi / Redmi / POCO</option><option>iPhone</option><option>Android gamer</option></select></div>
+        <div class="mxlab-field"><label>🎮 Dedos</label><select id="mxFingers"><option value="2">2 dedos</option><option value="3">3 dedos</option><option value="4">4 dedos</option><option value="5">5 dedos</option></select></div>
+        <div class="mxlab-field"><label>🎯 Modo</label><select id="mxMode"><option value="capa">🔥 Full Capa</option><option value="rush">⚡ Rush</option><option value="precision">🎯 Precisão</option><option value="control">🛡️ Controle</option><option value="onetap">👆 One Tap</option><option value="balanced">⚖️ Equilibrado</option></select></div>
+        <div class="mxlab-field"><label>📐 DPI</label><input id="mxLabDpi" type="number" min="300" max="1200" step="10" value="600"></div>
+        <div class="mxlab-field"><label>⚡ Intensidade <span id="mxIntensityText">75%</span></label><div class="mxlab-range"><input id="mxIntensity" type="range" min="30" max="100" value="75"><b id="mxIntensityVal">75</b></div></div>
+      </div>
+      <h3 style="margin:25px 0 8px">🧠 O que está acontecendo com sua mira?</h3>
+      <div class="mxdiag" id="mxProblems">
+        <button data-problem="passa">🎯 A mira passa da cabeça</button><button data-problem="peito">🫥 Fica muito no peito</button><button data-problem="lenta">🐢 Mira muito lenta</button><button data-problem="rapida">💨 Mira muito rápida</button><button data-problem="recuo">🔫 Recuo muito alto</button><button data-problem="capa">🔥 Dificuldade para dar capa</button>
+      </div>
+      <div class="mxlab-actions"><button type="button" class="mxlab-btn" id="mxGenerate"><i class="fas fa-bolt"></i> Gerar Sensi MestreXit</button><button type="button" class="mxlab-btn alt" id="mxDaily"><i class="fas fa-calendar-day"></i> Sensi do Dia</button><button type="button" class="mxlab-btn alt" id="mxExport"><i class="fas fa-image"></i> Gerar Imagem</button></div>
+      <div id="mxResult" class="mxlab-result"></div>
+      <div class="mxlab-note">* As configurações são presets gerados pelo sistema e servem como ponto de partida. O desempenho pode variar conforme aparelho, HUD e estilo de jogo.</div>
+    </div>`;
+  document.body.insertBefore(page,document.body.querySelector('footer')||document.body.lastElementChild);
+
+  // Add navigation entry without changing the existing menu structure.
+  const nav=document.querySelector('header nav');
+  if(nav){
+    const infoBtn=document.getElementById('infoBtn');
+    const a=document.createElement('a');
+    a.href='#'; a.className='nav-btn'; a.id='mxLabBtn';
+    a.innerHTML='<i class="fas fa-wand-magic-sparkles"></i> MestreXit Lab';
+    if(infoBtn) nav.insertBefore(a, infoBtn); else nav.appendChild(a);
+    // Garante que Info seja sempre a última aba.
+    if(infoBtn) nav.appendChild(infoBtn);
+  }
+  const homeGrid=document.querySelector('.features-grid');
+  if(homeGrid){const c=document.createElement('div');c.className='feature-card';c.innerHTML='<i class="fas fa-wand-magic-sparkles card-icon"></i><h3 class="card-title">MestreXit Sensi Lab</h3><p class="card-description">Novo gerador por aparelho, estilo, diagnóstico e comparação.</p><button class="card-btn" id="mxHomeBtn">Abrir MestreXit Lab</button>';homeGrid.appendChild(c);}
+
+  const intensity=document.getElementById('mxIntensity');
+  intensity.addEventListener('input',()=>{document.getElementById('mxIntensityVal').textContent=intensity.value;document.getElementById('mxIntensityText').textContent=intensity.value+'%';});
+  document.querySelectorAll('#mxProblems button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('#mxProblems button').forEach(x=>x.classList.remove('active'));b.classList.add('active');}));
+
+  let last=null;
+  function clamp(v){return Math.max(1,Math.min(200,Math.round(v)));}
+  function base(){
+    const device=document.getElementById('mxDevice').value, fingers=+document.getElementById('mxFingers').value, mode=document.getElementById('mxMode').value, dpi=+document.getElementById('mxLabDpi').value||600, inten=+intensity.value;
+    let factor=0;
+    const modes={capa:12,rush:16,precision:-8,control:-13,onetap:9,balanced:0}; factor=modes[mode]||0;
+    const dev=device.includes('iPhone')?5:device.includes('gamer')?8:device.includes('básico')?-7:0;
+    const finger=(fingers-3)*2, dpiAdj=(dpi-600)/70, intAdj=(inten-70)*0.35;
+    let g=175+factor+dev+finger+dpiAdj+intAdj;
+    const problem=document.querySelector('#mxProblems button.active')?.dataset.problem||'';
+    if(problem==='passa')g-=10;if(problem==='peito')g+=10;if(problem==='lenta')g+=12;if(problem==='rapida')g-=12;if(problem==='recuo')g-=6;if(problem==='capa')g+=7;
+    return {geral:clamp(g),mira:clamp(g-12),reddot:clamp(g-22),x2:clamp(g-34),x4:clamp(g-46),sniper:clamp(g-64),dpi:Math.max(300,Math.min(1200,Math.round(dpi))),device,fingers,mode,problem};
+  }
+  function render(r,title='Sua nova configuração'){
+    last=r; localStorage.setItem('mx_dpi_atual',r.dpi);
+    const labels={geral:'Geral',mira:'Mira',reddot:'Red Dot',x2:'Mira 2x',x4:'Mira 4x',sniper:'Mira Sniper'};
+    const rows=Object.entries(labels).map(([k,n])=>`<tr><td>${n}</td><td><b>${r[k]}%</b></td></tr>`).join('');
+    const score=Math.round((r.geral+r.mira+r.reddot+r.x2+r.x4+r.sniper)/12);
+    document.getElementById('mxResult').innerHTML=`<div class="mxlab-result-head"><div><h2 style="margin:0">${title}</h2><p style="margin:6px 0;color:rgba(255,255,255,.7)">${r.device} • ${r.fingers} dedos • DPI ${r.dpi}</p></div><div><span class="mxlab-pill">${r.mode.toUpperCase()}</span> <span class="mxlab-score">${score}</span></div></div><table class="mxlab-table"><thead><tr><th>Configuração</th><th>Valor</th></tr></thead><tbody>${rows}</tbody></table><div class="mxlab-actions"><button class="mxlab-btn" id="mxCopy"><i class="fas fa-copy"></i> Copiar Sensi</button><button class="mxlab-btn alt" id="mxCompare"><i class="fas fa-code-compare"></i> Comparar com minha Sensi</button></div><div id="mxCompareBox"></div>`;
+    document.getElementById('mxResult').classList.add('show');
+    document.getElementById('mxCopy').onclick=()=>{navigator.clipboard?.writeText(`MestreXit Sensi\nDPI: ${r.dpi}\nGeral: ${r.geral}\nMira: ${r.mira}\nRed Dot: ${r.reddot}\n2x: ${r.x2}\n4x: ${r.x4}\nSniper: ${r.sniper}`);document.getElementById('mxCopy').innerHTML='✅ Copiado!';};
+    document.getElementById('mxCompare').onclick=()=>{
+      document.getElementById('mxCompareBox').innerHTML=`<div class="mxlab-card" style="margin-top:14px"><h3>📊 Comparar sua sensi</h3><div class="mxlab-compare"><div>${['geral','mira','reddot','x2','x4','sniper'].map(k=>`<label style="display:block;margin:8px 0;text-transform:capitalize">${k}: <input class="mxold" data-k="${k}" type="number" min="0" max="200" value="${Math.max(1,r[k]-5)}"></label>`).join('')}</div><div id="mxDiff" style="padding:8px"></div></div><button class="mxlab-btn" id="mxDoCompare" style="margin-top:10px">Calcular diferença</button></div>`;
+      document.getElementById('mxDoCompare').onclick=()=>{const diffs=[...document.querySelectorAll('.mxold')].map(i=>`${i.dataset.k}: ${Number(i.value)} → ${r[i.dataset.k]} (${r[i.dataset.k]-Number(i.value)>=0?'+':''}${r[i.dataset.k]-Number(i.value)})`);document.getElementById('mxDiff').innerHTML='<b>Resultado</b><br>'+diffs.join('<br>');};
+    };
+  }
+  document.getElementById('mxGenerate').onclick=()=>render(base());
+  document.getElementById('mxDaily').onclick=()=>{const day=new Date();const seed=day.getFullYear()*10000+(day.getMonth()+1)*100+day.getDate();const r=base();r.geral=clamp(160+(seed%41));r.mira=clamp(r.geral-10);r.reddot=clamp(r.geral-20);r.x2=clamp(r.geral-32);r.x4=clamp(r.geral-44);r.sniper=clamp(r.geral-62);render(r,'🔥 Sensi do Dia');};
+  document.getElementById('mxExport').onclick=()=>{if(!last){render(base());}setTimeout(()=>{const r=last,c=document.createElement('canvas');c.width=900;c.height=720;const x=c.getContext('2d');x.fillStyle='#0b0f16';x.fillRect(0,0,c.width,c.height);x.fillStyle='#ff8c00';x.font='900 42px Arial';x.fillText('MestreXit Sensi',50,70);x.fillStyle='#fff';x.font='24px Arial';x.fillText(`${r.device} • ${r.fingers} dedos • DPI ${r.dpi}`,50,115);[['Geral',r.geral],['Mira',r.mira],['Red Dot',r.reddot],['2x',r.x2],['4x',r.x4],['Sniper',r.sniper]].forEach((a,i)=>{x.fillStyle='rgba(255,255,255,.08)';x.fillRect(50,150+i*75,800,55);x.fillStyle='#fff';x.font='bold 24px Arial';x.fillText(a[0],75,186+i*75);x.fillStyle='#ff8c00';x.fillText(a[1]+'%',740,186+i*75)});x.fillStyle='rgba(255,255,255,.5)';x.font='18px Arial';x.fillText('Gerado pelo MestreXit Sensi Lab • Free Fire 2026',50,665);const a=document.createElement('a');a.download='MestreXit-Sensi.png';a.href=c.toDataURL('image/png');a.click();},50);};
+
+  function openLab(){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));page.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
+  function home(){const h=document.getElementById('homePage');if(h){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));h.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}}
+  document.getElementById('mxLabBtn')?.addEventListener('click',e=>{e.preventDefault();openLab();});
+  document.getElementById('mxHomeBtn')?.addEventListener('click',e=>{e.preventDefault();openLab();});
+  document.getElementById('mxLabBack')?.addEventListener('click',e=>{e.preventDefault();home();});
+
+  // Marca MestreXit no título e metadados sem remover funcionalidades existentes.
+  document.title='MestreXit Sensi | Gerador Inteligente Free Fire 2026';
+})();
+</script>
+
+<!-- ================= MESTREXIT LAB 2.1 EXTRAS ================= -->
+<style>
+/* Menu organizado */
+header nav{flex-wrap:wrap!important;justify-content:flex-end!important;row-gap:8px!important}
+header nav .nav-btn{white-space:nowrap!important}
+.mx-nav-label{font-size:.68rem;font-weight:900;letter-spacing:.08em;color:#ff9d2e;opacity:.9;padding:0 3px;display:flex;align-items:center}
+.mx-nav-sep{width:1px;height:26px;background:rgba(255,255,255,.12);display:block;margin:0 2px}
+@media(max-width:850px){header nav{justify-content:flex-start!important;flex-wrap:nowrap!important;overflow-x:auto!important;max-width:100%;padding-bottom:5px;scrollbar-width:thin}header nav .mx-nav-label,header nav .mx-nav-sep{display:none}.nav-btn{flex:0 0 auto!important}}
+/* Lab 2.1 */
+.mxextra{margin-top:22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.mxextra-card{background:linear-gradient(145deg,rgba(255,140,0,.10),rgba(255,255,255,.035));border:1px solid rgba(255,140,0,.18);border-radius:18px;padding:18px}
+.mxextra-card h3{margin:0 0 7px}.mxextra-card p{color:rgba(255,255,255,.68);font-size:.88rem;line-height:1.4;margin:0 0 12px}
+.mxextra-form{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}.mxextra-form label{font-size:.8rem;font-weight:800;color:rgba(255,255,255,.75)}
+.mxextra-form input,.mxextra-form select{width:100%;box-sizing:border-box;margin-top:5px;padding:11px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:#111722;color:#fff}
+.mxextra-btn{border:0;border-radius:10px;padding:11px 14px;font-weight:900;cursor:pointer;background:#ff8c00;color:#111;margin-top:10px}.mxextra-btn.alt{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.12)}
+.mx-tune-row{display:grid;grid-template-columns:90px 1fr 42px 42px;gap:7px;align-items:center;margin:7px 0}.mx-tune-row b{font-size:.8rem}.mx-tune-row button{border:0;border-radius:8px;background:rgba(255,255,255,.08);color:#fff;padding:8px;cursor:pointer}.mx-tune-row input{width:100%;accent-color:#ff8c00}
+@media(max-width:550px){.mx-tune-row{grid-template-columns:72px 1fr 38px 38px}}
+</style>
+<script>
+(function(){
+  const page=()=>document.getElementById('mxLabPage');
+  function addNavOrganization(){
+    const nav=document.querySelector('header nav'); if(!nav||nav.dataset.mxOrganized)return;
+    nav.dataset.mxOrganized='1';
+    const info=document.getElementById('infoBtn'), lab=document.getElementById('mxLabBtn');
+    if(!lab)return;
+    const make=(txt)=>{const s=document.createElement('span');s.className='mx-nav-label';s.textContent=txt;return s};
+    const sep=()=>{const s=document.createElement('span');s.className='mx-nav-sep';return s};
+    const ids=['homeBtn','proBtn','twoThreeBtn','randomBtn','weaponBtn','dpiBtn','mxLabBtn','infoBtn'];
+    ids.forEach(id=>document.getElementById(id)?.classList.remove('mx-old-order'));
+    const home=document.getElementById('homeBtn'), pro=document.getElementById('proBtn'), two=document.getElementById('twoThreeBtn'), rand=document.getElementById('randomBtn'), weapon=document.getElementById('weaponBtn'), dpi=document.getElementById('dpiBtn');
+    if(home) nav.insertBefore(make('PRINCIPAL'),home);
+    if(pro) nav.insertBefore(make('SENSI'),pro);
+    if(weapon) nav.insertBefore(make('CONFIGURAÇÕES'),weapon);
+    if(lab) nav.insertBefore(make('LAB'),lab);
+    if(info){nav.appendChild(sep());nav.appendChild(info);}
+  }
+  function enhance(){
+    const p=page(); if(!p||p.dataset.mxExtra)return; p.dataset.mxExtra='1';
+    const settings=p.querySelector('.settings-container'); if(!settings)return;
+    const box=document.createElement('div'); box.className='mxextra'; box.innerHTML=`
+      <div class="mxextra-card"><h3>🧠 Corrigir Minha Sensi</h3><p>Digite sua configuração atual e diga o problema. O MestreXit sugere ajustes.</p>
+        <div class="mxextra-form"><label>Geral<input id="mxfG" type="number" min="1" max="200" value="180"></label><label>Red Dot<input id="mxfR" type="number" min="1" max="200" value="170"></label><label>2x<input id="mxf2" type="number" min="1" max="200" value="150"></label><label>4x<input id="mxf4" type="number" min="1" max="200" value="140"></label></div>
+        <select id="mxfProblem" style="width:100%;margin-top:10px;padding:11px;border-radius:10px;background:#111722;color:#fff;border:1px solid rgba(255,255,255,.12)"><option value="passa">Mira passa da cabeça</option><option value="peito">Fica no peito</option><option value="lenta">Mira lenta</option><option value="rapida">Mira rápida</option><option value="recuo">Recuo alto</option><option value="capa">Difícil dar capa</option></select>
+        <button class="mxextra-btn" id="mxFixBtn">🧠 Corrigir Sensi</button><div id="mxFixResult"></div>
+      </div>
+      <div class="mxextra-card"><h3>📊 Comparar Sensi</h3><p>Compare uma configuração antiga com a última sensi gerada.</p>
+        <div class="mxextra-form"><label>Geral<input id="mxcG" type="number" value="180"></label><label>Red Dot<input id="mxcR" type="number" value="170"></label><label>2x<input id="mxc2" type="number" value="150"></label><label>4x<input id="mxc4" type="number" value="140"></label></div>
+        <button class="mxextra-btn" id="mxCompareBtn">📊 Comparar</button><div id="mxCompareResult"></div>
+      </div>
+      <div class="mxextra-card"><h3>🎚️ Ajuste Fino</h3><p>Ajuste cada valor rapidamente com +1 ou -1.</p><div id="mxTune"></div><button class="mxextra-btn alt" id="mxTuneApply">Aplicar ao resultado</button></div>`;
+    settings.appendChild(box);
+
+    const val=(id)=>Number(document.getElementById(id)?.value||0);
+    const clamp=v=>Math.max(1,Math.min(200,Math.round(v)));
+    document.getElementById('mxFixBtn').onclick=()=>{
+      const d={passa:-8,peito:8,lenta:10,rapida:-10,recuo:-6,capa:6}[document.getElementById('mxfProblem').value]||0;
+      const g=clamp(val('mxfG')+d); const r=clamp(val('mxfR')+d); const x2=clamp(val('mxf2')+d); const x4=clamp(val('mxf4')+d);
+      document.getElementById('mxFixResult').innerHTML=`<div class="mxfix-result"><b>Nova sugestão:</b><br>Geral: <b>${g}</b> • Red Dot: <b>${r}</b> • 2x: <b>${x2}</b> • 4x: <b>${x4}</b></div>`;
+    };
+    document.getElementById('mxCompareBtn').onclick=()=>{
+      const r=window.__mestreXitLabLast||{geral:180,reddot:170,x2:150,x4:140}; const old={geral:val('mxcG'),reddot:val('mxcR'),x2:val('mxc2'),x4:val('mxc4')};
+      const arr=[['Geral',old.geral,r.geral],['Red Dot',old.reddot,r.reddot],['2x',old.x2,r.x2],['4x',old.x4,r.x4]];
+      document.getElementById('mxCompareResult').innerHTML='<div class="mxfix-result">'+arr.map(a=>`${a[0]}: <b>${a[1]}</b> → <b>${a[2]}</b> (${a[2]-a[1]>=0?'+':''}${a[2]-a[1]})`).join('<br>')+'</div>';
+    };
+    const tune=document.getElementById('mxTune');
+    const tuneKeys=[
+      ['Geral','geral',180],['Mira','mira',168],['Red Dot','reddot',158],
+      ['2x','x2',146],['4x','x4',134],['Sniper','sniper',116]
+    ];
+    function drawTune(){
+      const current=window.__mestreXitLabLast||{};
+      tune.innerHTML=tuneKeys.map(a=>{
+        const value=Number.isFinite(Number(current[a[1]]))?clamp(current[a[1]]):a[2];
+        return `<div class="mx-tune-row"><b>${a[0]}</b><input type="range" min="1" max="200" value="${value}" data-key="${a[1]}" aria-label="${a[0]}"><button type="button" data-delta="-1">−</button><button type="button" data-delta="1">+</button></div>`;
+      }).join('');
+    }
+    drawTune();
+    tune.addEventListener('input',e=>{if(e.target.matches('input[type="range"]'))e.target.title=e.target.value+'%';});
+    tune.addEventListener('click',e=>{
+      const b=e.target.closest('button[data-delta]'); if(!b)return;
+      e.preventDefault(); const input=b.parentElement.querySelector('input[type="range"]'); if(!input)return;
+      input.value=clamp(Number(input.value)+Number(b.dataset.delta)); input.dispatchEvent(new Event('input',{bubbles:true}));
+    });
+    document.getElementById('mxTuneApply').onclick=()=>{
+      const rows=[...tune.querySelectorAll('input[data-key]')];
+      const r={...(window.__mestreXitLabLast||{})};
+      rows.forEach(i=>r[i.dataset.key]=clamp(Number(i.value)));
+      r.mira=Number.isFinite(r.mira)?r.mira:clamp(r.geral-12); r.dpi=Number.isFinite(r.dpi)?r.dpi:600;
+      r.device=r.device||'Android básico'; r.fingers=r.fingers||3; r.mode=r.mode||'balanced';
+      window.__mestreXitLabLast=r;
+      const res=p.querySelector('#mxResult');
+      if(res){
+        const values={geral:r.geral,mira:r.mira,reddot:r.reddot,x2:r.x2,x4:r.x4,sniper:r.sniper};
+        const labels={geral:'Geral',mira:'Mira',reddot:'Red Dot',x2:'Mira 2x',x4:'Mira 4x',sniper:'Mira Sniper'};
+        res.querySelectorAll('.mxlab-table tbody tr').forEach(row=>{
+          const name=row.cells?.[0]?.textContent?.trim(); const key=Object.keys(labels).find(k=>labels[k]===name);
+          if(key&&row.cells[1])row.cells[1].innerHTML=`<b>${values[key]}%</b>`;
+        });
+        res.classList.add('show');
+      }
+      const cr=document.getElementById('mxCompareResult');
+      if(cr)cr.innerHTML='<div class="mxfix-result">🎚️ <b>Ajuste fino aplicado!</b><br>Os valores foram atualizados no resultado acima.</div>';
+    };
+  }
+  function run(){addNavOrganization();enhance();}
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run();
+  setTimeout(run,700);setTimeout(run,1800);
+})();
+</script>
+<!-- ================= FIM MESTREXIT LAB 2.1 EXTRAS ================= -->
+
+<!-- ================= FIM MESTREXIT LAB 2.0 ================= -->
+
+<style>
+/* MestreXit Lab - correção de interação */
+#mxLabPage{position:relative!important;z-index:200!important;pointer-events:auto!important}
+#mxLabPage *{pointer-events:auto}
+#mxLabPage select,#mxLabPage input,#mxLabPage button{position:relative;z-index:201;pointer-events:auto!important;touch-action:manipulation}
+#mxLabPage .mxlab-btn,#mxLabPage .mxdiag button{cursor:pointer!important}
+#mxLabPage .mxlab-result{position:relative;z-index:202}
+</style>
+<script>
+/* MestreXit Lab - controlador de segurança para cliques/touch */
+(function(){
+  function bindLab(){
+    const page=document.getElementById('mxLabPage');
+    if(!page) return;
+    const q=s=>page.querySelector(s);
+    const intensity=q('#mxIntensity');
+    if(intensity && !intensity.dataset.boundFix){
+      intensity.dataset.boundFix='1';
+      intensity.addEventListener('input',function(){
+        const v=q('#mxIntensityVal'),t=q('#mxIntensityText');
+        if(v)v.textContent=this.value;if(t)t.textContent=this.value+'%';
+      });
+    }
+    page.addEventListener('click',function(e){
+      const problem=e.target.closest('#mxProblems button');
+      if(problem){
+        e.preventDefault();
+        page.querySelectorAll('#mxProblems button').forEach(b=>b.classList.remove('active'));
+        problem.classList.add('active');
+        return;
+      }
+      const gen=e.target.closest('#mxGenerate');
+      const daily=e.target.closest('#mxDaily');
+      const img=e.target.closest('#mxExport');
+      if(gen||daily||img){
+        e.preventDefault();
+        const dpi=Math.max(300,Math.min(1200,Number(q('#mxLabDpi')?.value)||600));
+        const fingers=Number(q('#mxFingers')?.value||3);
+        const mode=q('#mxMode')?.value||'balanced';
+        const device=q('#mxDevice')?.value||'Android básico';
+        const inten=Number(q('#mxIntensity')?.value||75);
+        const adj={capa:12,rush:16,precision:-8,control:-13,onetap:9,balanced:0}[mode]||0;
+        const dadj=device.includes('iPhone')?5:device.includes('gamer')?8:device.includes('básico')?-7:0;
+        let g=175+adj+dadj+(fingers-3)*2+(dpi-600)/70+(inten-70)*.35;
+        const active=q('#mxProblems button.active');
+        const pa=active?.dataset.problem||'';
+        g+=({passa:-10,peito:10,lenta:12,rapida:-12,recuo:-6,capa:7}[pa]||0);
+        const C=v=>Math.max(1,Math.min(200,Math.round(v)));
+        const r={geral:C(g),mira:C(g-12),reddot:C(g-22),x2:C(g-34),x4:C(g-46),sniper:C(g-64),dpi,device,fingers,mode};
+        if(daily){const d=new Date();const seed=d.getFullYear()*10000+(d.getMonth()+1)*100+d.getDate();r.geral=C(160+seed%41);r.mira=C(r.geral-10);r.reddot=C(r.geral-20);r.x2=C(r.geral-32);r.x4=C(r.geral-44);r.sniper=C(r.geral-62);}
+        window.__mestreXitLabLast=r;
+        const title=daily?'🔥 Sensi do Dia':'🎯 Sensi Gerada pelo MestreXit';
+        const rows=[['Geral',r.geral],['Mira',r.mira],['Red Dot',r.reddot],['Mira 2x',r.x2],['Mira 4x',r.x4],['Mira Sniper',r.sniper]].map(x=>`<tr><td>${x[0]}</td><td><b>${x[1]}%</b></td></tr>`).join('');
+        const result=q('#mxResult');
+        if(result){
+          result.innerHTML=`<div class="mxlab-result-head"><div><h2 style="margin:0">${title}</h2><p style="margin:6px 0;color:rgba(255,255,255,.7)">${r.device} • ${r.fingers} dedos • DPI ${r.dpi}</p></div><span class="mxlab-pill">${r.mode.toUpperCase()}</span></div><table class="mxlab-table"><thead><tr><th>Configuração</th><th>Valor</th></tr></thead><tbody>${rows}</tbody></table><div class="mxlab-actions"><button type="button" class="mxlab-btn" id="mxFixCopy">📋 Copiar Sensi</button></div>`;
+          result.classList.add('show');
+          const copy=q('#mxFixCopy');
+          if(copy)copy.onclick=async()=>{const txt=`MestreXit Sensi\nDPI: ${r.dpi}\nGeral: ${r.geral}\nMira: ${r.mira}\nRed Dot: ${r.reddot}\n2x: ${r.x2}\n4x: ${r.x4}\nSniper: ${r.sniper}`;try{await navigator.clipboard.writeText(txt);copy.textContent='✅ Copiado!'}catch(_){window.prompt('Copie sua configuração:',txt)}};
+        }
+        if(img){
+          const c=document.createElement('canvas');c.width=900;c.height=720;const x=c.getContext('2d');
+          x.fillStyle='#0b0f16';x.fillRect(0,0,900,720);x.fillStyle='#ff8c00';x.font='900 42px Arial';x.fillText('MestreXit Sensi',50,70);x.fillStyle='#fff';x.font='24px Arial';x.fillText(`${r.device} • ${r.fingers} dedos • DPI ${r.dpi}`,50,115);
+          [['Geral',r.geral],['Mira',r.mira],['Red Dot',r.reddot],['2x',r.x2],['4x',r.x4],['Sniper',r.sniper]].forEach((a,i)=>{x.fillStyle='rgba(255,255,255,.08)';x.fillRect(50,150+i*75,800,55);x.fillStyle='#fff';x.font='bold 24px Arial';x.fillText(a[0],75,186+i*75);x.fillStyle='#ff8c00';x.fillText(a[1]+'%',740,186+i*75)});
+          x.fillStyle='rgba(255,255,255,.5)';x.font='18px Arial';x.fillText('Gerado pelo MestreXit Sensi Lab • Free Fire 2026',50,665);
+          const a=document.createElement('a');a.download='MestreXit-Sensi.png';a.href=c.toDataURL('image/png');document.body.appendChild(a);a.click();a.remove();
+        }
+      }
+    },true);
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',bindLab);else bindLab();
+  setTimeout(bindLab,500);setTimeout(bindLab,1500);
+})();
+</script>
+</body>
+</html>
