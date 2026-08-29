@@ -1,6 +1,0 @@
-/* MestreXit Lab - correção de interação */
-#mxLabPage{position:relative!important;z-index:200!important;pointer-events:auto!important}
-#mxLabPage *{pointer-events:auto}
-#mxLabPage select,#mxLabPage input,#mxLabPage button{position:relative;z-index:201;pointer-events:auto!important;touch-action:manipulation}
-#mxLabPage .mxlab-btn,#mxLabPage .mxdiag button{cursor:pointer!important}
-#mxLabPage .mxlab-result{position:relative;z-index:202}
