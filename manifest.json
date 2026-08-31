@@ -1,0 +1,10 @@
+{
+  "name": "MestreXit V3 - Gerador de Sensi",
+  "short_name": "MestreXit",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#050510",
+  "theme_color": "#ff8c00",
+  "description": "Gerador inteligente de sensibilidade MestreXit.",
+  "icons": [{"src":"assets/logo.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]
+}
